@@ -1,11 +1,11 @@
 //                  LES FONCTIONS
 
-let crie = "Toujours plus bas !"; // globale
+let nombreUn = 4;
+nombreDeux = 7;
 
-function crieDeGuerre() {
-  let crie = "Toujours plus fort !"; // locale
-  console.log(crie);
+function addition(nombreA, nombreB) {
+  let result = nombreA + nombreB;
+  console.log(result);
 }
 
-crieDeGuerre();
-console.log(crie);
+addition(nombreUn, nombreDeux);
