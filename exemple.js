@@ -14,3 +14,4 @@ let tempsDePreparationFraisier = cuisiner(1, 20);
 
 console.log(tempsDePreparationChocolat); // 100
 console.log(tempsDePreparationFraisier); // 35
+console.log(tempsDePreparationChocolat + tempsDePreparationFraisier); // 135
