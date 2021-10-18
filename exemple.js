@@ -1,17 +1,8 @@
 //                  LES FONCTIONS
 
-function cuisiner(
-  nombreDeGateaux,
-  minutesDePreparation = 10,
-  minutesDeCuisson = 15
-) {
-  let resultat = nombreDeGateaux * (minutesDeCuisson + minutesDePreparation);
-  return resultat;
+function demanderAge() {
+  let age = prompt("Quel est votre âge ?");
+  alert("Vous avez " + age + " !");
 }
 
-let tempsDePreparationChocolat = cuisiner(4);
-let tempsDePreparationFraisier = cuisiner(1, 20);
-
-console.log(tempsDePreparationChocolat); // 100
-console.log(tempsDePreparationFraisier); // 35
-console.log(tempsDePreparationChocolat + tempsDePreparationFraisier); // 135
+demanderAge();
