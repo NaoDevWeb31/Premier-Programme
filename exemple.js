@@ -1,3 +1,9 @@
 //                  DEMANDER DES INFOS AUX UTILISATEURS
 
-alert("Hello World !");
+if (confirm("Souhaitez-vous confirmer ?")) {
+  // Oui
+  alert("Ok");
+} else {
+  // Non
+  alert("Annulation");
+}
