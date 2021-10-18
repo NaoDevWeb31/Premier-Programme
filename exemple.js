@@ -1,7 +1,5 @@
 //                  LES FONCTIONS
 
-let fonctionAnonyme = function () {
+(function () {
   console.log("Je suis une fonction anonyme");
-};
-
-fonctionAnonyme();
+})();
