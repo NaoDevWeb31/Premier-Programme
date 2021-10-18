@@ -5,7 +5,8 @@ nombreDeux = 7;
 
 function addition(nombreA, nombreB) {
   let result = nombreA + nombreB;
-  console.log(result);
+  // console.log(result);
+  return result;
 }
 
-addition(nombreUn, nombreDeux);
+console.log(addition(nombreUn, nombreDeux));
