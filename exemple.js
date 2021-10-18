@@ -1,11 +1,11 @@
 //                  LES FONCTIONS
 
-let nombreUn = 4;
-nombreDeux = 7;
+let preparation = 10;
+cuisson = 15;
 
-function addition(nombreA, nombreB = 10) {
-  let result = nombreA + nombreB;
-  return result;
+function cuisiner(nombreDeGateaux, minutesDePreparation, minutesDeCuisson) {
+  let resultat = nombreDeGateaux * (minutesDeCuisson + minutesDePreparation);
+  return resultat;
 }
 
-console.log(addition(nombreUn)); // 14
+console.log(cuisiner(1, preparation, cuisson)); // 25
