@@ -1,7 +1,7 @@
 //                  LES FONCTIONS
 
-function addition(nombreUn, nombreDeux) {
-  console.log(nombreUn + nombreDeux);
+function direBonjour(prenom) {
+  alert("Bonjour " + prenom + " !");
 }
 
-addition(5, 9.4);
+direBonjour("Naomi");
