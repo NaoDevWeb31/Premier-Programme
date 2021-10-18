@@ -7,7 +7,10 @@ function prevoirAge() {
   age = parseFloat(age); // Convertir une chaine en nombre décimal
   // age = Number(age); // Méthode RECOMMANDÉE pour convertir une chaine en nombre sans se prendre la tête
 
-  alert("Bientôt, vous aurez " + (age + 1) + " !"); // "30" + 1 = 301
+  // nombre = 45;
+  // nombreEnString = nombre + ""; // Méthode "barbare" pour convertir un nombre en chaine
+
+  alert("Bientôt, vous aurez " + (age + 1) + " !");
 }
 
 prevoirAge();
