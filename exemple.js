@@ -1,5 +1,8 @@
-//                  DEMANDER DES INFOS AUX UTILISATEURS
+//                  LES FONCTIONS
 
-const age = prompt("Entrez votre age");
+function direBonjour() {
+  // Méthode Camel Case
+  alert("Bonjour");
+}
 
-alert("Bonjour, vous avez " + age + " ans.");
+direBonjour();
