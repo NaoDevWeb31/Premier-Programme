@@ -8,4 +8,4 @@ function cuisiner(nombreDeGateaux, minutesDePreparation, minutesDeCuisson) {
   return resultat;
 }
 
-console.log(cuisiner(1, preparation, cuisson)); // 25
+console.log(cuisiner(5, preparation, cuisson)); // 125
