@@ -1,16 +1,20 @@
 //                  EXERCICES SUR LES FONCTIONS
 
 // Exercice #2 : Avancé
-// // Ma méthode
-function calculerIMC(poids, taille) {
-  poids = prompt("Renseignez votre poids en kg :");
-  taille = prompt("Renseignez votre taille en m :");
-
-  poids = parseFloat(poids);
-  taille = parseFloat(taille);
-
-  let resultat = poids / taille ** 2;
+// // La solution
+function solutionCalculerIMC(poids, taille) {
+  // Convertir la taille en mètres
+  let tailleEnMetres = taille / 100;
+  // Calcule la taille à la puissance 2
+  let tailleCalculee = Math.pow(tailleEnMetres, 2); // tailleEnMetres²
+  // Calcule l'IMC
+  let resultat = poids / tailleCalculee;
   return resultat;
 }
 
-alert("Votre indice de masse corporelle est de " + calculerIMC());
+poids = prompt("Renseignez votre poids en kg :");
+taille = prompt("Renseignez votre taille en cm :");
+alert(
+  "Votre indice de masse corporelle est de " +
+    solutionCalculerIMC(poids, taille)
+);
