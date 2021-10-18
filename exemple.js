@@ -1,7 +1,8 @@
 //                  LES FONCTIONS
 
-function direBonjour(prenom) {
-  alert("Bonjour " + prenom + " !");
+function crieDeGuerre() {
+  let crie = "Toujours plus fort !";
+  console.log(crie);
 }
 
-direBonjour("Naomi");
+crieDeGuerre();
