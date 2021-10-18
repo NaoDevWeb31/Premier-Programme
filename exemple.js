@@ -9,4 +9,15 @@ function addition(nombreA, nombreB) {
   return result; // 11
 }
 
-console.log(addition(nombreUn, nombreDeux));
+function division(nombreA, nombreB) {
+  let result = nombreA / nombreB;
+  // console.log(result);
+  return result; // 0.5714285714285714
+}
+
+let resultatAddition = addition(nombreUn, nombreDeux);
+let resultatDivision = division(nombreUn, nombreDeux);
+
+console.log(resultatAddition);
+console.log(resultatDivision);
+console.log(resultatAddition * resultatDivision); // 6.285714285714286
