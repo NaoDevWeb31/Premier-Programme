@@ -1,11 +1,12 @@
 //                  LES FONCTIONS
 
-let preparation = 10;
-cuisson = 15;
-
-function cuisiner(nombreDeGateaux, minutesDePreparation, minutesDeCuisson) {
+function cuisiner(
+  nombreDeGateaux,
+  minutesDePreparation = 10,
+  minutesDeCuisson = 15
+) {
   let resultat = nombreDeGateaux * (minutesDeCuisson + minutesDePreparation);
   return resultat;
 }
 
-console.log(cuisiner(5, preparation, cuisson)); // 125
+console.log(cuisiner(5)); // 125
