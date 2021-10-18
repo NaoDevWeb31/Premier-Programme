@@ -1,8 +1,11 @@
 //                  LES VARIABLES & LES OPÉRATEURS
 
-const prenom = "Naomi";
-const nom = "Mango";
+let nombreUn = 8,
+  nombreDeux = 4,
+  result;
 
-console.log("Bonjour " + prenom + " " + nom + " !");
+result = (nombreUn + nombreDeux) * 9; // 108
+result++; // incrémentation => ajouter 1
+result--; // décrémentation => retirer 1
 
-// Bonjour [prenom] [age] !
+console.log(result);
