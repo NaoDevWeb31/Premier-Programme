@@ -1,8 +1,7 @@
 //                  LES FONCTIONS
 
-function direBonjour() {
-  // Méthode Camel Case
-  alert("Bonjour");
+function addition(nombreUn, nombreDeux) {
+  console.log(nombreUn + nombreDeux);
 }
 
-direBonjour();
+addition(5, 9.4);
