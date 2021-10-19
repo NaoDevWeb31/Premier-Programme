@@ -1,10 +1,15 @@
 //                  LES BOUCLES
 
-// Tant que le prénom est vide, il est demandé
-do {
+// let i = 1;
 
-  var prenom = prompt("Quel est votre prénom ?"); // globale
+// while (i < 5) {
 
-} while (prenom == "" || prenom == null);
+//   console.log("Ligne : " + i);
+//   i++
+  
+// }
 
-alert("Bonjour, " + prenom + " !");
+for (let i = 1; i < 5; i++) {
+    console.log("Ligne : " + i);
+    
+}
