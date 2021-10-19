@@ -1,14 +1,20 @@
 //                  LES CONDITIONS
 
-let consommable = "pomme de terre";
+let consommable = "chocolat";
 
 switch (consommable) {
+  case "courgette":
   case "carotte":
-  case "pomme de terre": // possible d'en placer les uns à la suite des autres
+  case "pomme de terre":
     console.log("Ceci est un légume.");
-    break; // sortir de la condition
+    break;
 
   case "banane":
     console.log("Ceci est un fruit.");
     break;
+
+  default:
+    // mettre à la fin du switch
+    // même rôle que "else"
+    console.log("Ceci n'est ni un fruit ni légume.");
 }
