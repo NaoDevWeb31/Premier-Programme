@@ -12,11 +12,14 @@
 
 let x = 5;
 
-// Condition ternaire
-[CONDITION] ? [TRUE] : [FALSE];
-
 // if (x > 3) {
 //   console.log("x est supérieur à trois");
 // } else {
 //   console.log("x est inférieur à trois");
 // }
+
+// Condition ternaire => [CONDITION] ? [TRUE] : [FALSE];
+// // CHALLENGE
+x > 3
+  ? console.log("x est supérieur à trois")
+  : console.log("x est inférieur à trois");
