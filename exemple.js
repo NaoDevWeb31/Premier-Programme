@@ -1,18 +1,6 @@
-//                  LES CONDITIONS
+//                  LES CONDITIONS - Challenge
 
-let heure = 18;
-
-// heure == 11 => égal
-// heure != 11 => différent
-// heure < 11 => inférieur
-// heure > 11 => supérieur
-// heure <= 11 => inférieur ou égal
-// heure >= 11 => supérieur ou égal
-
-if (heure < 12) {
-  console.log("C'est le matin.");
-} else if (heure < 18) {
-  console.log("C'est l'après-midi.");
-} else {
-  console.log("C'est la soirée.");
-}
+// age
+// -18 : Vous n'êtes pas majeur
+// 18 et 20 : Vous êtes majeur en France
+// 21+ : Vous êtes majeur partout, à vous les casinos !
