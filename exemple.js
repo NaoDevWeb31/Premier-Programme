@@ -1,11 +1,10 @@
 //                  LES BOUCLES
 
 try {
-
-    // Erreur ?
-
-} catch {
-    
-    // Erreur !
-    
+  // Erreur ?
+  alert(hello);
+}
+catch (error) {
+  // Erreur !
+    alert(error);
 }
