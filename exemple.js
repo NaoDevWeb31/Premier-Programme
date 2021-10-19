@@ -1,20 +1,8 @@
 //                  LES CONDITIONS
 
-let consommable = "chocolat";
+let gareDeDepart = "Valenciennes"
+let gareDArrivee = "Gare du Nord";
 
-switch (consommable) {
-  case "courgette":
-  case "carotte":
-  case "pomme de terre":
-    console.log("Ceci est un légume.");
-    break;
-
-  case "banane":
-    console.log("Ceci est un fruit.");
-    break;
-
-  default:
-    // mettre à la fin du switch
-    // même rôle que "else"
-    console.log("Ceci n'est ni un fruit ni légume.");
+if (condition et condition) {
+    console.log("Le train va démarrer.");
 }
