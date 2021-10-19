@@ -1,32 +1,16 @@
-//                  LES BOUCLES
+//                  LES FONCTIONS & LA LOGIQUE
+// // Portée des variables
 
-try {
-  // Erreur ?
-  let recompense = prompt("Choisissez une récompense : épée, arc, haches");
-  let degats;
+let variableLet = "globale";
+var variableVar = "globale";
 
-  switch (recompense) {
-    case "épée":
-      degats = 40;
-      break;
-    case "arc":
-      degats = 30;
-      break;
-    case "haches":
-      degats = 20;
-      break;
-    default:
-      throw new Error("Vous ne pouvez pas tricher !"); // Lancer une erreur qui est envoyer dans le bloc "catch"
-  }
+if (true) {
+  let variableLet = "locale";
+  var variableVar = "locale";
 
-  alert("Vous avez choisi : " + recompense + " (" + degats + " dégâts).");
+  console.log("let : " + variableLet); // locale
+  console.log("var : " + variableVar); // locale
 }
-catch (error) {
-  // Erreur !
-  alert(error);
-}
-finally {
-  // bloc exécuté à chaque fois à coup sûr
-  // utile surtout s'il y a un return dans le bloc "try"
-  alert("Fin du programme");
-}
+
+console.log("let : " + variableLet); // Reprend la valeur de départ définie avant la condition => globale
+console.log("var : " + variableVar); // Garde la nouvelle valeur définie dans la condition => locale
