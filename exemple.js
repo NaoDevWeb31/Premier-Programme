@@ -16,12 +16,17 @@ try {
       degats = 20;
       break;
     default:
-        throw new Error("Vous ne pouvez pas tricher !"); // Lancer une erreur qui est envoyer dans le bloc "catch"
+      throw new Error("Vous ne pouvez pas tricher !"); // Lancer une erreur qui est envoyer dans le bloc "catch"
   }
-  
+
   alert("Vous avez choisi : " + recompense + " (" + degats + " dégâts).");
 }
 catch (error) {
   // Erreur !
   alert(error);
+}
+finally {
+  // bloc exécuté à chaque fois à coup sûr
+  // utile surtout s'il y a un return dans le bloc "try"
+  alert("Fin du programme");
 }
