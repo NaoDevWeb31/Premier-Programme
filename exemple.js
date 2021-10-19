@@ -6,5 +6,5 @@ try {
 }
 catch (error) {
   // Erreur !
-    alert(error);
+    alert(error.stack); // erreur avec son emplacement dans le fichier
 }
