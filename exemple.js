@@ -1,6 +1,9 @@
 //                  LES BOUCLES
 
 // bloc "do" se répète tant que la condition est vraie
+// bloc "do" s'exécute TOUJOURS une première fois
 do {
-    
-} while (condition);
+
+  console.log("test");
+  
+} while (false);
