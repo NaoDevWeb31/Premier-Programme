@@ -1,10 +1,11 @@
 //                  LES CONDITIONS
 
 let gareDeDepart = "Valenciennes";
-let gareDArrivee = "Gare du Nord";
+let gareDArrivee = "";
 
-if (gareDeDepart != "") {
-  if (gareDArrivee != "") {
-    console.log("Le train va démarrer.");
-  }
+// AND
+if (gareDeDepart != "" && gareDArrivee != "") {
+  console.log("Le train va démarrer.");
+} else {
+  console.log("Le train ne peut pas démarrer.");
 }
