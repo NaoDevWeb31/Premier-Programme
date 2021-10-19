@@ -1,24 +1,15 @@
-//                  LES FONCTIONS & LA LOGIQUE
-// // Récursivité
+//                  LES FONCTIONS & LA LOGIQUE - Exercice
 
-function timer(secondes) {
-  // 10
-  if (secondes > 0) {
-    console.log(secondes);
-    timer(secondes - 1); // 9
-
-    // afficher 9
-    // timer(8)
-
-    // afficher 8
-    // timer(7)
-
-    // ...
+function somme(nombre) { // 5
+  if (nombre == 1) {
+    return 1; // somme(1) = 1
   }
-  else {
-    // timer(0)
-    console.log(secondes);
-  }
+  return nombre + somme(nombre - 1); // 4
+  // return 4 + somme(4 - 1) => 3
+  // return 3 + somme(3 - 1) => 2
+  // return 2 + somme(2 - 1) => 1
+  // return 1
+
+  // 5 + 4 + 3 + 2 + 1
 }
-
-timer(10);
+console.log(somme(5));
