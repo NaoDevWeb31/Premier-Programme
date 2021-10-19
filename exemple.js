@@ -11,6 +11,8 @@ let heure = 18;
 
 if (heure < 12) {
   console.log("C'est le matin.");
-} else {
+} else if (heure < 18) {
   console.log("C'est l'après-midi.");
+} else {
+  console.log("C'est la soirée.");
 }
