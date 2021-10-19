@@ -1,9 +1,13 @@
 //                  LES BOUCLES
 
-// bloc "do" se répète tant que la condition est vraie
-// bloc "do" s'exécute TOUJOURS une première fois
+
+let prenom;
+
+// Tant que le prénom est vide, il est demandé
 do {
 
-  console.log("test");
-  
-} while (false);
+  prenom = prompt("Quel est votre prénom ?");
+
+} while (prenom == "" || prenom == null);
+
+alert("Bonjour, " + prenom + " !");
