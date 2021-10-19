@@ -1,11 +1,19 @@
 //                  LES CONDITIONS
 
-let x = 7;
+// let gareDeDepart = "Valenciennes";
+// let gareDArrivee = "";
+// let chauffeur = "";
 
-// NOT => inverser une condition
-if (!x < 5) {
-  // si (condition true) => si (condition false)
-  console.log("x est inférieur à 5");
+// if ((gareDeDepart != "" || gareDArrivee != "") && chauffeur != "") {
+//   console.log("Le train va démarrer.");
+// } else {
+//   console.log("Le train ne peut pas démarrer.");
+// }
+
+let x = 5;
+
+if (x > 3) {
+  console.log("x est supérieur à trois");
 } else {
-  console.log("x n'est pas inférieur à 5");
+  console.log("x est inférieur à trois");
 }
