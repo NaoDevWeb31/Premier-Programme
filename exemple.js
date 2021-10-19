@@ -1,12 +1,9 @@
 //                  LES BOUCLES
 
-
-let prenom;
-
 // Tant que le prénom est vide, il est demandé
 do {
 
-  prenom = prompt("Quel est votre prénom ?");
+  var prenom = prompt("Quel est votre prénom ?"); // globale
 
 } while (prenom == "" || prenom == null);
 
