@@ -27,24 +27,36 @@ function soustraction(nombreA, nombreB) {
 }
 
 function division(nombreA, nombreB) {
+  if (nombreB == 0) {
+    // Gérer l'exception
+    throw new Error("Impossible de diviser par 0.");
+  }
   return nombreA / nombreB;
 }
 
 // Appeler la fonction à utiliser
-switch (choix) {
-  case 1:
-    var resultat = addition(premierNombre, deuxiemeNombre);
-    break;
-  case 2:
-    var resultat = multiplication(premierNombre, deuxiemeNombre);
-    break;
-  case 3:
-    var resultat = soustraction(premierNombre, deuxiemeNombre);
-    break;
-  case 4:
-    var resultat = division(premierNombre, deuxiemeNombre);
-    break;
+// Gérer les exceptions
+try {
+  switch (choix) {
+    case 1:
+      var resultat = addition(premierNombre, deuxiemeNombre);
+      break;
+    case 2:
+      var resultat = multiplication(premierNombre, deuxiemeNombre);
+      break;
+    case 3:
+      var resultat = soustraction(premierNombre, deuxiemeNombre);
+      break;
+    case 4:
+      var resultat = division(premierNombre, deuxiemeNombre);
+      break;
+    // Gérer l'exception
+    default:
+      throw new Error("Une erreur est survenue !");
+  }
+  // Afficher le résultat
+  alert("Voici le résultat : " + resultat);
 }
-
-// Afficher le résultat
-alert("Voici le résultat : " + resultat);
+catch (error) {
+  alert(error);
+}
