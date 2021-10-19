@@ -12,3 +12,20 @@ do {
   var premierNombre = Number(prompt("Entrez un premier nombre :"));
   var deuxiemeNombre = Number(prompt("Entrez un deuxième nombre :"));
 } while (isNaN(premierNombre) || isNaN(deuxiemeNombre));
+
+// Créer les 4 fonctions
+function addition(nombreA, nombreB) {
+  return nombreA + nombreB;
+}
+
+function multiplication(nombreA, nombreB) {
+  return nombreA * nombreB;
+}
+
+function soustraction(nombreA, nombreB) {
+  return nombreA - nombreB;
+}
+
+function division(nombreA, nombreB) {
+  return nombreA / nombreB;
+}
