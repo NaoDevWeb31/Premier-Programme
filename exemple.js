@@ -1,15 +1,10 @@
 //                  LES BOUCLES
 
-// let i = 1;
+let i = 0;
 
-// while (i < 5) {
+while (i < 5) {
 
-//   console.log("Ligne : " + i);
-//   i++
-  
-// }
+  console.log("Ligne : " + i);
+  i++;
 
-for (let i = 1; i < 5; i++) {
-    console.log("Ligne : " + i);
-    
 }
