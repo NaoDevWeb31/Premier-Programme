@@ -29,3 +29,19 @@ function soustraction(nombreA, nombreB) {
 function division(nombreA, nombreB) {
   return nombreA / nombreB;
 }
+
+// Appeler la fonction à utiliser
+switch (choix) {
+  case 1:
+    var resultat = addition(premierNombre, deuxiemeNombre);
+    break;
+  case 2:
+    var resultat = multiplication(premierNombre, deuxiemeNombre);
+    break;
+  case 3:
+    var resultat = soustraction(premierNombre, deuxiemeNombre);
+    break;
+  case 4:
+    var resultat = division(premierNombre, deuxiemeNombre);
+    break;
+}
