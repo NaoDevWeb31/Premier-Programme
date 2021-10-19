@@ -6,3 +6,9 @@ do {
     )
   );
 } while (choix !== 1 && choix !== 2 && choix !== 3 && choix !== 4);
+
+// Demander deux nombres à utiliser
+do {
+  var premierNombre = Number(prompt("Entrez un premier nombre :"));
+  var deuxiemeNombre = Number(prompt("Entrez un deuxième nombre :"));
+} while (isNaN(premierNombre) || isNaN(deuxiemeNombre));
