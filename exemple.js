@@ -1,8 +1,10 @@
 //                  LES CONDITIONS
 
-let gareDeDepart = "Valenciennes"
+let gareDeDepart = "Valenciennes";
 let gareDArrivee = "Gare du Nord";
 
-if (condition et condition) {
+if (gareDeDepart != "") {
+  if (gareDArrivee != "") {
     console.log("Le train va démarrer.");
+  }
 }
