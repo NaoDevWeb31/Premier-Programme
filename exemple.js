@@ -1,10 +1,6 @@
 //                  LES BOUCLES
 
-let i = 1;
-
-while (i < 5) {
-
-  console.log("Ligne : " + i);
-  i++;
-  
-}
+// bloc "do" se répète tant que la condition est vraie
+do {
+    
+} while (condition);
