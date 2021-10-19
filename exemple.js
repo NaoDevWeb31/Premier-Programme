@@ -1,16 +1,24 @@
 //                  LES FONCTIONS & LA LOGIQUE
-// // Portée des variables
+// // Récursivité
 
-let variableLet = "globale";
-var variableVar = "globale";
+function timer(secondes) {
+  // 10
+  if (secondes > 0) {
+    console.log(secondes);
+    timer(secondes - 1); // 9
 
-if (true) {
-  let variableLet = "locale";
-  var variableVar = "locale";
+    // afficher 9
+    // timer(8)
 
-  console.log("let : " + variableLet); // locale
-  console.log("var : " + variableVar); // locale
+    // afficher 8
+    // timer(7)
+
+    // ...
+  }
+  else {
+    // timer(0)
+    console.log(secondes);
+  }
 }
 
-console.log("let : " + variableLet); // Reprend la valeur de départ définie avant la condition => globale
-console.log("var : " + variableVar); // Garde la nouvelle valeur définie dans la condition => locale
+timer(10);
