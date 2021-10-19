@@ -1,16 +1,18 @@
 //                  LES CONDITIONS
 
-// let gareDeDepart = "Valenciennes";
-// let gareDArrivee = "";
-// let chauffeur = "";
+let gareDeDepart = "Valenciennes";
+let gareDArrivee = prompt("Où souhaitez-vous aller ?");
+let chauffeur = "Naomi";
 
-// if ((gareDeDepart != "" || gareDArrivee != "") && chauffeur != "") {
-//   console.log("Le train va démarrer.");
-// } else {
-//   console.log("Le train ne peut pas démarrer.");
-// }
+if ((gareDeDepart != "" || gareDArrivee != "") && chauffeur != "") {
+  alert("Le train va démarrer à destination de " + gareDArrivee + ".");
+} else {
+  alert("Le train ne peut pas démarrer.");
+}
 
-let x = 5;
+/****************************************************************************************************/
+
+// let x = 5;
 
 // if (x > 3) {
 //   console.log("x est supérieur à trois");
@@ -18,8 +20,6 @@ let x = 5;
 //   console.log("x est inférieur à trois");
 // }
 
-// Condition ternaire => [CONDITION] ? [TRUE] : [FALSE];
-// // CHALLENGE
-x > 3
-  ? console.log("x est supérieur à trois")
-  : console.log("x est inférieur à trois");
+// x > 3
+//   ? console.log("x est supérieur à trois")
+//   : console.log("x est inférieur à trois");
