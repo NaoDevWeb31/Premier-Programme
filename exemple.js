@@ -2,9 +2,9 @@
 
 let gareDeDepart = "Valenciennes";
 let gareDArrivee = "";
+let chauffeur = "";
 
-// OR (double pipe)
-if (gareDeDepart != "" || gareDArrivee != "") {
+if ((gareDeDepart != "" || gareDArrivee != "") && chauffeur != "") {
   console.log("Le train va démarrer.");
 } else {
   console.log("Le train ne peut pas démarrer.");
