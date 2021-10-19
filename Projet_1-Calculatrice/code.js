@@ -45,3 +45,6 @@ switch (choix) {
     var resultat = division(premierNombre, deuxiemeNombre);
     break;
 }
+
+// Afficher le résultat
+alert("Voici le résultat : " + resultat);
