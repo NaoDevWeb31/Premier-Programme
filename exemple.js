@@ -1,6 +1,6 @@
 //                  LES CONDITIONS
 
-let heure = 11;
+let heure = 18;
 
 // heure == 11 => égal
 // heure != 11 => différent
@@ -9,14 +9,8 @@ let heure = 11;
 // heure <= 11 => inférieur ou égal
 // heure >= 11 => supérieur ou égal
 
-if (heure == 11) {
-  console.log("C'est bientôt le midi.");
-}
-
 if (heure < 12) {
   console.log("C'est le matin.");
-}
-
-if (heure >= 12) {
+} else {
   console.log("C'est l'après-midi.");
 }
