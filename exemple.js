@@ -6,5 +6,5 @@ try {
 }
 catch (error) {
   // Erreur !
-    alert(error.stack); // erreur avec son emplacement dans le fichier
+    alert("La variable hello n'existe pas !"); // ne s'affiche pas dans la console des DevTools
 }
