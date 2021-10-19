@@ -1,16 +1,21 @@
-//                  LES CONDITIONS - Challenge - Solution
+//                  LES CONDITIONS - Fiche technique sur les opérateurs de comparaison
 
-// age
-// -18 : Vous n'êtes pas majeur
-// 18 et 20 : Vous êtes majeur en France
-// 21+ : Vous êtes majeur partout, à vous les casinos !
+// == : égal à la valeur
+// === : égal à la valeur et au type
+// != : différent de la valeur
+// !== : différent de la valeur et du type
+// > : supérieur
+// < : inférieur
+// >= : supérieur ou égal
+// <= : inférieur ou égal
 
-let age = 40;
+// Si nous prenons un exemple, voici la différence entre l'opérateur == et === :
+let nombre = 3;
 
-if (age < 18) {
-  console.log("Vous n'êtes pas majeur.");
-} else if (age < 21) {
-  console.log("Vous êtes majeur en France.");
-} else {
-  console.log("Vous êtes majeur partout, à vous les casinos !");
+if (nombre == "3") {
+  // vaudra "true"
+}
+if (nombre === "3") {
+  // vaudra "false"
+  // nombre est de type Number
 }
