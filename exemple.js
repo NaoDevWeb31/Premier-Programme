@@ -1,7 +1,9 @@
 //                  LES CONDITIONS
 
 let gareDeDepart = "Valenciennes";
-let gareDArrivee = prompt("Où souhaitez-vous aller ?");
+let gareDArrivee = prompt("Où souhaitez-vous aller ?")
+                    /* Création d'une valeur par défaut => */
+                    || "Gare du Nord";
 let chauffeur = "Naomi";
 
 if ((gareDeDepart != "" || gareDArrivee != "") && chauffeur != "") {
