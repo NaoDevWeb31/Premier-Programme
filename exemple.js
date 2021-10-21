@@ -4,8 +4,10 @@
 //   console.log("test");
 // };
 
-let maFonction = () => {
-  console.log("test");
-}
+// let maFonction = () => {
+//   console.log("test");
+// }
+
+let maFonction = () => console.log("test");
 
 maFonction();
