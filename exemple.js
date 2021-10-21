@@ -1,7 +1,5 @@
 //                  LES OBJETS
 
-let voitures = new WeakSet(); // Créer un WeakSet => collection d'objets
-
 let voitureA = {
   constructeur: "Tesla",
   modele: "Cybertruck",
@@ -12,7 +10,6 @@ let voitureB = {
   modele: "Espace",
 };
 
-voitures.add(voitureA); // Ajouter un objet au WeakSet
-voitures.add(voitureB); // Ajouter un objet au WeakSet
+let voitures = new WeakSet([voitureA, voitureB]); // Créer un WeakSet en ajoutant les objets au WeakSet
 
 console.log(voitures); // WeakSet {{constructeur, …}, {constructeur, …}}
