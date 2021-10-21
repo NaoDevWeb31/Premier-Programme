@@ -6,5 +6,6 @@ let monMap = new Map([
 ]);
 
 monMap.set("poste", "PDG de Facebook"); // Ajouter une paire clé-valeur
+monMap.delete("poste"); // Supprimer une paire clé-valeur
 
-console.log(monMap); // Map(3) {prenom => Mark, nom => Zuckerberg, poste => PDG de Facebook}
+console.log(monMap); // Map(3) {prenom => Mark, nom => Zuckerberg}
