@@ -2,10 +2,10 @@
 
 let panier = ["fraise", "banane", "poire"];
 
-// Récupérer directement la valeur des éléments du tableau un à un
+// Challenge - Récupérer l'index des éléments du tableau
 for (const fruit of panier) {
-  console.log(fruit);
+  console.log(panier.indexOf(fruit));
 }
-// fraise
-// banane
-// poire
+// 0
+// 1
+// 2
