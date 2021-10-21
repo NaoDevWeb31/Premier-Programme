@@ -1,15 +1,8 @@
-//                  LE REST PARAMETER - Challenge
+//                  LE SPREAD OPERATOR
+// // Opérateur de décomposition
 
-// Regroupement d'un tableau de pleins de valeurs => Avoir un nombre infini d'arguments
-function addition(...nombres) {
+// Exemple 1 : fusionner plusieurs tableaux
+let fruits = ["fraise", "banane", "poire"];
+let aliments = ["chocolat", "sucre", "lait"];
 
-  let resultat = 0;
-
-  nombres.forEach((nombre) => {
-    resultat += nombre;
-  });
-  
-  console.log(resultat);
-}
-
-addition(4, 9, 5, 415, 78, 54, 5); // 570
+console.log(aliments); // ['chocolat', 'sucre', 'lait']
