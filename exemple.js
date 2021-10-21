@@ -1,19 +1,15 @@
-//                  LE REST PARAMETER
-// // Ajouter un nombre infini d'arguments
+//                  LE REST PARAMETER - Challenge
 
-// ...paramètre => REST parameter => regroupement d'un tableau de pleins de valeurs
+// Regroupement d'un tableau de pleins de valeurs => Avoir un nombre infini d'arguments
 function addition(...nombres) {
 
-  nombres.forEach((nombre) => {
-    console.log(nombre);
-  });
+  let resultat = 0;
 
+  nombres.forEach((nombre) => {
+    resultat += nombre;
+  });
+  
+  console.log(resultat);
 }
-addition(4, 9, 5, 415, 78, 54, 5);
-// 4
-// 9
-// 5
-// 415
-// 78
-// 54
-// 5
+
+addition(4, 9, 5, 415, 78, 54); // 565
