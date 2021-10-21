@@ -2,16 +2,20 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-monTableau.pop(); // Retirer un élément du tableau à la FIN
-monTableau.shift(); // Retirer un élément du tableau au DÉBUT
-console.log(monTableau);
+monTableau.pop(); // ["un", "deux", "trois"]
+monTableau.shift(); // ["deux", "trois"]
+// console.log(monTableau);
 
 // Tableau dimensionnel
 let monTableau2D = [
   ["Mark", "Jeff", "Bill"],
   ["Zuckerberg", "Bezos", "Gates"],
 ];
-// console.log(monTableau2D);
+monTableau2D[0].pop(); // [ ["Mark", "Jeff"], ["Zuckerberg", "Bezos", "Gates"] ]
+monTableau2D[1].shift(); // [ ["Mark", "Jeff"], ["Bezos", "Gates"] ]
+monTableau2D.pop(); // [ ["Mark", "Jeff"] ]
+monTableau2D.shift(); // []
+console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
@@ -19,4 +23,5 @@ let monTableauAssociatif = {
   nom: "Zuckerberg",
   poste: "PDG de Facebook",
 };
+monTableauAssociatif["nationalité"] = "Américaine"; // {prenom: 'Mark', nom: 'Zuckerberg', poste: 'PDG de Facebook'}
 // console.log(monTableauAssociatif);
