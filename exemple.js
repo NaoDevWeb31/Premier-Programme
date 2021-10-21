@@ -1,15 +1,16 @@
 //                  LES OBJETS
 
+let voitures = new WeakMap(); // Créer un WeakMap => collection de paires clé (objet)-valeur(tous types)
+
+let index = {
+  id: 1,
+};
+
 let voitureA = {
   constructeur: "Tesla",
   modele: "Cybertruck",
 };
 
-let voitureB = {
-  constructeur: "Renault",
-  modele: "Espace",
-};
+voitures.set(index, voitureA); // Ajouter la paire au WeakMap
 
-let voitures = new WeakSet([voitureA, voitureB]); // Créer un WeakSet en ajoutant les objets au WeakSet
-
-console.log(voitures); // WeakSet {{constructeur, …}, {constructeur, …}}
+console.log(voitures); // WeakMap {{id: 1} => {constructeur, …}}
