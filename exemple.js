@@ -3,10 +3,11 @@
 let nombres = [10, 45, 75, 10, 24, 45];
 
 // let monSet = new Set(nombres);
-let monSet = new Set();
+let monSet = new Set(); // Créer un set
 
-monSet.add("70");
-monSet.add(87);
-monSet.add(["mon", "tableau", "test"]);
+monSet.add("70"); // Ajouter un string au set
+monSet.add(87); // Ajouter un number au set
 
-console.log(monSet); // Set(3) {70, 87, ['mon', 'tableau', 'test']}
+monSet.delete(87); // Supprimer la valeur du set
+
+console.log(monSet); // Set(1) {70}
