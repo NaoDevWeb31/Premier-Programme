@@ -2,7 +2,7 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-monTableau.splice(0, 2); // Ajouter, remplacer ou supprimer des éléments dans le tableau
+monTableau.splice(0, 2); // ['trois', 'quatre']
 console.log(monTableau);
 
 // Tableau dimensionnel
