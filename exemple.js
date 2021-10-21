@@ -6,18 +6,18 @@ let monTableauAssociatif = {
   poste: "PDG de Facebook",
 };
 
-// Challenge
-function concatener(tableauAssociatif) {
-  var chaine = "";
+// Challenge - Solution
+function concatener(tableau) {
+  let chaine = "";
 
-  for (const valeur in tableauAssociatif) {
-    chaine += (valeur + " : " + tableauAssociatif[valeur] + "\n");
+  for (const valeur in tableau) {
+    chaine += (valeur + " : " + tableau[valeur] + "\n");
   }
 
-  return chaine;
+  console.log(chaine);
 }
 
-console.log(concatener(monTableauAssociatif));
+concatener(monTableauAssociatif);
 // prenom : Mark
 // nom : Zuckerberg
 // poste : PDG de Facebook
