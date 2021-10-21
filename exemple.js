@@ -2,7 +2,7 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-console.log(monTableau.indexOf("deux")); // Récupérer l'index d'un élément du tableau grâce à sa valeur => 1
+console.log(monTableau.join()); // Transformer le tableau en chaîne de caractère
 
 // Tableau dimensionnel
 let monTableau2D = [
