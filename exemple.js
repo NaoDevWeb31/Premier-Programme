@@ -1,27 +1,13 @@
 //                  LES OBJETS
+// // L'affectation par décomposition
 
-let chien = {
-  race: "Shiba",
-  poil: "Court",
-  // aboyer: function () {
-  //   console.log("Ouaf ouaf");
-  // },
-  aboyer: () => console.log("Ouaf ouaf"),
-};
+let informations = ["superSayen", "25", "homme"];
 
-chien.aboyer();
+// La méthode Sans décomposition
+let pseudo = informations[0];
+let age = informations[1];
+let sexe = informations[2];
 
-// let magicien = {
-//   attaquer: function () {
-//     console.log("Le magicien lance un sort");
-//   },
-// };
-
-// let guerrier = {
-//   attaquer: function () {
-//     console.log("Le guerrier prend son épée");
-//   },
-// };
-
-// magicien.attaquer(); // Le magicien lance un sort
-// guerrier.attaquer(); // Le guerrier prend son épée
+console.log(pseudo);
+console.log(age);
+console.log(sexe);
