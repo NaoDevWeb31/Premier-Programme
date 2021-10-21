@@ -2,19 +2,15 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-// console.log(monTableau.join()); // un,deux,trois,quatre
-// console.log(monTableau.join(", ")); // un, deux, trois, quatre
-// console.log(monTableau.join(" / ")); // un / deux / trois / quatre
+monTableau.splice(0, 2); // Ajouter, remplacer ou supprimer des éléments dans le tableau
+console.log(monTableau);
 
 // Tableau dimensionnel
 let monTableau2D = [
   ["Mark", "Jeff", "Bill"],
   ["Zuckerberg", "Bezos", "Gates"],
 ];
-console.log(monTableau2D.join()); // Mark,Jeff,Bill,Zuckerberg,Bezos,Gates
-console.log(monTableau2D.join(", ")); // Mark,Jeff,Bill, Zuckerberg,Bezos,Gates
-console.log(monTableau2D[0].join(", ")); // Mark,Jeff,Bill
-console.log(monTableau2D.join(" / ")); // Mark,Jeff,Bill / Zuckerberg,Bezos,Gates
+// console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
