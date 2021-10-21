@@ -2,7 +2,9 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-console.log(monTableau.join()); // Transformer le tableau en chaîne de caractère
+console.log(monTableau.join()); // un,deux,trois,quatre
+console.log(monTableau.join(", ")); // un, deux, trois, quatre
+console.log(monTableau.join(" / ")); // un / deux / trois / quatre
 
 // Tableau dimensionnel
 let monTableau2D = [
