@@ -34,3 +34,5 @@ function timer() {
 
 let monTimer = timer();
 console.log(monTimer()); // 1
+console.log(monTimer()); // 2
+console.log(monTimer()); // 3
