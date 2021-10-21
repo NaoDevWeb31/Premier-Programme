@@ -3,14 +3,15 @@
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
 monTableau.splice(1, 0, "random", "pie"); // ['un', 'random', 'pie', 'deux', 'trois', 'quatre']
-console.log(monTableau);
+// console.log(monTableau);
 
 // Tableau dimensionnel
 let monTableau2D = [
   ["Mark", "Jeff", "Bill"],
   ["Zuckerberg", "Bezos", "Gates"],
 ];
-// console.log(monTableau2D);
+monTableau2D.splice(0, 0); // [ ["Mark", "Jeff", "Bill"], ["Zuckerberg", "Bezos", "Gates"] ]
+console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
