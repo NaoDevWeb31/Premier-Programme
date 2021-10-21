@@ -5,4 +5,6 @@ let monMap = new Map([
   ["nom", "Zuckerberg"], // paire clé-valeur
 ]);
 
-console.log(monMap); // Map(2) {prenom => Mark, nom => Zuckerberg}
+monMap.set("poste", "PDG de Facebook"); // Ajouter une paire clé-valeur
+
+console.log(monMap); // Map(3) {prenom => Mark, nom => Zuckerberg, poste => PDG de Facebook}
