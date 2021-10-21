@@ -1,17 +1,19 @@
 //                  LES TABLEAUX
 
-let listeDePays = ["France", "Belgique", "Japon", "Maroc"];
+let monTableauAssociatif = {
+  prenom: "Mark",
+  nom: "Zuckerberg",
+  poste: "PDG de Facebook",
+};
 
-// for (const pays of listeDePays) {
-//   console.log(pays);
-// }
+let chaine = "";
 
-// listeDePays.forEach(function(pays){
-//   console.log(pays);
-// });
+// Concaténer un tableau associatif
+for (const valeur in monTableauAssociatif) {
+  chaine += valeur + " : " + monTableauAssociatif[valeur] + "\n";
+}
 
-listeDePays.forEach((pays) => console.log(pays));
-// France
-// Belgique
-// Japon
-// Maroc
+console.log(chaine);
+// prenom : Mark
+// nom : Zuckerberg
+// poste : PDG de Facebook
