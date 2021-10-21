@@ -3,8 +3,8 @@
 let panier = ["fraise", "banane", "poire"];
 
 for (const fruit in panier) {
-  console.log(fruit);
+  console.log(panier[fruit]);
 }
-// 0
-// 1
-// 2
+// fraise
+// banane
+// poire
