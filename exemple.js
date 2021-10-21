@@ -1,13 +1,15 @@
-//                  LES FONCTIONS FLÉCHÉES
+//                  LES CLOSURES (OU FERMETURES)
 
-// let maFonction = function() {
-//   console.log("test");
-// };
+// // Fonction dans une fonction
+// // Sauvegarder les variables locales qu'elle utilise
 
-// let maFonction = () => {
-//   console.log("test");
-// }
+function bonjour(prenom) {
 
-let maFonction = () => console.log("test");
+  let resultat = "Bonjour " + prenom; // locale
+  let maClosure = () => console.log(resultat);
+  return maClosure;
 
-maFonction();
+}
+
+let maFonction = bonjour("Evan"); // stocke directement la variable "resultat"
+maFonction(); // Bonjour Evan
