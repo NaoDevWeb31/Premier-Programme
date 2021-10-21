@@ -1,16 +1,7 @@
 //                  LES OBJETS
-// // L'affectation par décomposition
 
-let informations = ["superSayen", "25", "homme"];
+let nombres = [10, 45, 75, 10, 24, 45]; // (6)
 
-// La méthode Sans décomposition
-// let pseudo = informations[0];
-// let age = informations[1];
-// let sexe = informations[2];
+let monSet = new Set(nombres);
 
-// La méthode Avec décomposition
-let [pseudo, age, sexe] = informations;
-
-console.log(pseudo);
-console.log(age);
-console.log(sexe);
+console.log(monSet); // Set(4) {10, 45, 75, 24} => doublons supprimés
