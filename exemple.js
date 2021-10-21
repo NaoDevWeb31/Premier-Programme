@@ -15,7 +15,7 @@ monTableau2D[0].pop(); // [ ["Mark", "Jeff"], ["Zuckerberg", "Bezos", "Gates"] ]
 monTableau2D[1].shift(); // [ ["Mark", "Jeff"], ["Bezos", "Gates"] ]
 monTableau2D.pop(); // [ ["Mark", "Jeff"] ]
 monTableau2D.shift(); // []
-console.log(monTableau2D);
+// console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
@@ -23,5 +23,5 @@ let monTableauAssociatif = {
   nom: "Zuckerberg",
   poste: "PDG de Facebook",
 };
-monTableauAssociatif["nationalité"] = "Américaine"; // {prenom: 'Mark', nom: 'Zuckerberg', poste: 'PDG de Facebook'}
-// console.log(monTableauAssociatif);
+delete(monTableauAssociatif.poste); // {prenom: 'Mark', nom: 'Zuckerberg'}
+console.log(monTableauAssociatif);
