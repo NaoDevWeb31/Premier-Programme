@@ -2,7 +2,7 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-monTableau.splice(0, 0, "random", "pie"); // ['random', 'pie', 'un', 'deux', 'trois', 'quatre']
+monTableau.splice(1, 0, "random", "pie"); // ['un', 'random', 'pie', 'deux', 'trois', 'quatre']
 console.log(monTableau);
 
 // Tableau dimensionnel
