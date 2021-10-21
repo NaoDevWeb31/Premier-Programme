@@ -10,6 +10,16 @@ let aliments = ["chocolat", "sucre", "lait", ...fruits];
 
 // Exemple 2 : découper une chaîne de caractères en plusieurs éléments
 let phrase = "Bonjour !";
+// Décomposer les caractères de la chaîne
 let phraseTableau = [...phrase];
 
-console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
+// console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
+
+// Exemple 3 : sélectionner un élément, et stocker les autres dans une variable
+// // Sans décomposition
+let devises = ["dollars", "euro", "yen"];
+let premiereDevise = devises[0];
+let autres = [devises[1], devises[2]];
+
+console.log(premiereDevise); // dollars
+console.log(autres); //['euro', 'yen']
