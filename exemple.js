@@ -3,6 +3,10 @@
 let chien = {
   race: "Shiba",
   poil: "Court",
+  // Challenge
+  aboyer: function() {
+    console.log("Ouaf ouaf");
+  },
 };
 
-console.log(chien.race); // Shiba
+chien.aboyer(); // Ouaf ouaf
