@@ -2,10 +2,13 @@
 
 let listeDePays = ["France", "Belgique", "Japon", "Maroc"];
 
-// Challenge
-for (const pays of listeDePays) {
+// for (const pays of listeDePays) {
+//   console.log(pays);
+// }
+
+listeDePays.forEach(function(pays){
   console.log(pays);
-}
+});
 // France
 // Belgique
 // Japon
