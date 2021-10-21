@@ -10,7 +10,7 @@ let monTableau2D = [
   ["Mark", "Jeff", "Bill"],
   ["Zuckerberg", "Bezos", "Gates"],
 ];
-monTableau2D.splice(0, 1); // [ ["Mark", "Jeff", "Bill"]
+monTableau2D[0].splice(0, 1); // [ ["Jeff", "Bill"], ["Zuckerberg", "Bezos", "Gates"] ]
 console.log(monTableau2D);
 
 // Tableau associatif
