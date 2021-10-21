@@ -12,4 +12,4 @@ function addition(...nombres) {
   console.log(resultat);
 }
 
-addition(4, 9, 5, 415, 78, 54); // 565
+addition(4, 9, 5, 415, 78, 54, 5); // 570
