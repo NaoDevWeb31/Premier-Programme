@@ -2,6 +2,8 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
+monTableau.push("cinq"); // Ajouter un élément à la FIN du tableau
+console.log(monTableau);
 
 // Tableau dimensionnel
 let monTableau2D = [
