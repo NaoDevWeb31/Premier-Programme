@@ -4,6 +4,9 @@ let monTableau = new Array("un", "deux", "trois");
 let monTableau = Array("un", "deux", "trois");
 let monTableau = ["un", "deux", "trois"]; // Désormais
 
+// Accéder à un élément du tableau
+console.log(monTableau[0]); // index 0 = élément 1
+
 // Ancienne version - Tableau multidimensionnel
 let monTableau2D = new Array(
   Array("Mark", "Jeff", "Bill"),
