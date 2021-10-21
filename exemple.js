@@ -1,24 +1,27 @@
 //                  LES OBJETS
 
-// let chien = {
-//   race: "Shiba",
-//   poil: "Court",
-//   aboyer: function() {
-//     console.log("Ouaf ouaf");
+let chien = {
+  race: "Shiba",
+  poil: "Court",
+  // aboyer: function () {
+  //   console.log("Ouaf ouaf");
+  // },
+  aboyer: () => console.log("Ouaf ouaf"),
+};
+
+chien.aboyer();
+
+// let magicien = {
+//   attaquer: function () {
+//     console.log("Le magicien lance un sort");
 //   },
 // };
 
-let magicien = {
-  attaquer: function () {
-    console.log("Le magicien lance un sort");
-  },
-};
+// let guerrier = {
+//   attaquer: function () {
+//     console.log("Le guerrier prend son épée");
+//   },
+// };
 
-let guerrier = {
-  attaquer: function () {
-    console.log("Le guerrier prend son épée");
-  },
-};
-
-magicien.attaquer(); // Le magicien lance un sort
-guerrier.attaquer(); // Le guerrier prend son épée
+// magicien.attaquer(); // Le magicien lance un sort
+// guerrier.attaquer(); // Le guerrier prend son épée
