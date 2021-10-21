@@ -13,7 +13,7 @@ let monTableau2D = [
 ];
 monTableau2D[0].push("test"); // ["Mark", "Jeff", "Bill", "test"]
 monTableau2D[1].unshift("test"); // ["test", Zuckerberg", "Bezos", "Gates"]
-console.log(monTableau2D);
+// console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
@@ -21,3 +21,5 @@ let monTableauAssociatif = {
   nom: "Zuckerberg",
   poste: "PDG de Facebook",
 };
+monTableauAssociatif["nationalité"] = "Américaine"; // {prenom: 'Mark', nom: 'Zuckerberg', poste: 'PDG de Facebook', nationalité: 'Américaine'}
+console.log(monTableauAssociatif);
