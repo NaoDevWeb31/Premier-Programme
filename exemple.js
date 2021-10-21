@@ -2,10 +2,10 @@
 
 let panier = ["fraise", "banane", "poire"];
 
-// Pour récupérer les éléments un par un
-for (const fruit in panier) {
-  // Modifier à la volée la valeur d'un élément du tableau
-  panier[fruit] = "pomme";
+// Récupérer directement la valeur des éléments du tableau un à un
+for (const fruit of panier) {
+  console.log(fruit);
 }
-
-console.log(panier); // ['pomme', 'pomme', 'pomme']
+// fraise
+// banane
+// poire
