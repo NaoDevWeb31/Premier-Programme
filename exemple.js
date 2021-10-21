@@ -4,9 +4,12 @@
 let informations = ["superSayen", "25", "homme"];
 
 // La méthode Sans décomposition
-let pseudo = informations[0];
-let age = informations[1];
-let sexe = informations[2];
+// let pseudo = informations[0];
+// let age = informations[1];
+// let sexe = informations[2];
+
+// La méthode Avec décomposition
+let [pseudo, age, sexe] = informations;
 
 console.log(pseudo);
 console.log(age);
