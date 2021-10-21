@@ -2,15 +2,18 @@
 
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
-monTableau.push("cinq"); // Ajouter un élément à la FIN du tableau
-monTableau.unshift("zero"); // Ajouter un élément au DÉBUT du tableau
-console.log(monTableau);
+monTableau.push("cinq"); // ["un", "deux", "trois", "quatre", "cinq"]
+monTableau.unshift("zero"); // ["zero", un", "deux", "trois", "quatre", "cinq"]
+// console.log(monTableau);
 
 // Tableau dimensionnel
 let monTableau2D = [
   ["Mark", "Jeff", "Bill"],
   ["Zuckerberg", "Bezos", "Gates"],
 ];
+monTableau2D[0].push("test"); // ["Mark", "Jeff", "Bill", "test"]
+monTableau2D[1].unshift("test"); // ["test", Zuckerberg", "Bezos", "Gates"]
+console.log(monTableau2D);
 
 // Tableau associatif
 let monTableauAssociatif = {
