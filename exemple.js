@@ -3,6 +3,7 @@
 // Tableau simple
 let monTableau = ["un", "deux", "trois", "quatre"];
 monTableau.push("cinq"); // Ajouter un élément à la FIN du tableau
+monTableau.unshift("zero"); // Ajouter un élément au DÉBUT du tableau
 console.log(monTableau);
 
 // Tableau dimensionnel
