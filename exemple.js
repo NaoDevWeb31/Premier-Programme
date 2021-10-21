@@ -1,11 +1,15 @@
 //                  LES OBJETS
 
-let monMap = new Map([
-  ["prenom", "Mark"], // paire clé-valeur
-  ["nom", "Zuckerberg"], // paire clé-valeur
-]);
+let utilisateurs = new Map();
 
-monMap.set("poste", "PDG de Facebook"); // Ajouter une paire clé-valeur
-monMap.delete("poste"); // Supprimer une paire clé-valeur
+utilisateurs.set(
+  // clé
+  "Mark Zuckerberg",
+  // valeur = un objet
+  {
+    email: "mark@facebook.com",
+    poste: "PDG",
+  }
+); // Ajouter une paire clé-valeur à la Map "utilisateurs"
 
-console.log(monMap); // Map(3) {prenom => Mark, nom => Zuckerberg}
+console.log(utilisateurs); // {"Mark Zuckerberg" => {email: 'mark@facebook.com', poste: 'PDG'}}
