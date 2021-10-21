@@ -8,6 +8,6 @@ let monSet = new Set(); // Créer un set
 monSet.add("70"); // Ajouter un string au set
 monSet.add(87); // Ajouter un number au set
 
-monSet.delete(87); // Supprimer la valeur du set
+// monSet.delete(87); // Supprimer la valeur du set
 
-console.log(monSet); // Set(1) {70}
+console.log(monSet.size); // Connaître le nombre d'éléments dans le set => 2
