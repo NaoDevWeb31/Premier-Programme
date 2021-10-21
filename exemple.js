@@ -12,5 +12,6 @@ let voitureA = {
 };
 
 voitures.set(index, voitureA); // Ajouter la paire au WeakMap
+voitures.delete(index); // Supprimer la paire du WeakMap
 
-console.log(voitures); // WeakMap {{id: 1} => {constructeur, …}}
+console.log(voitures); // WeakMap {}
