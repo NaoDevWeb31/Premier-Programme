@@ -4,8 +4,8 @@
 // let monTableau = Array("un", "deux", "trois");
 let monTableau = ["un", "deux", "trois"]; // Désormais
 
-// Récupérer le nombre d'éléments du tableau
-console.log(monTableau.length); // 3
+// Accéder au dernier élément du tableau
+console.log(monTableau[monTableau.length - 1]); // trois
 
 // Ancienne version - Tableau multidimensionnel
 // let monTableau2D = new Array(
