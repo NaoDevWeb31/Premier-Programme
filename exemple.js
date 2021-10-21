@@ -2,14 +2,17 @@
 
 let utilisateurs = new Map();
 
+utilisateurs.set("Mark Zuckerberg", {
+  email: "mark@facebook.com",
+  poste: "PDG",
+});
+
 utilisateurs.set(
-  // clé
-  "Mark Zuckerberg",
-  // valeur = un objet
-  {
-    email: "mark@facebook.com",
-    poste: "PDG",
+  /* clé */ "Bill Gates",
+  /* valeur */ {
+    email: "bill@gatesnotes.com",
+    poste: "Sauver le monde",
   }
 ); // Ajouter une paire clé-valeur à la Map "utilisateurs"
 
-console.log(utilisateurs); // {"Mark Zuckerberg" => {email: 'mark@facebook.com', poste: 'PDG'}}
+console.log(utilisateurs); // {"Mark Zuckerberg" => {email: 'mark@facebook.com', poste: 'PDG'}}, Bill Gates => {email: 'bill@gatesnotes.com', poste: 'Sauver le monde'}}
