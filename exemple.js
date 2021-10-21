@@ -1,7 +1,19 @@
 //                  LE REST PARAMETER
+// // Ajouter un nombre infini d'arguments
 
-function addition(nombreA, nombreB) {
-  let resultat = nombreA + nombreB;
-  console.log(resultat);
+// ...paramètre => REST parameter => regroupement d'un tableau de pleins de valeurs
+function addition(...nombres) {
+
+  nombres.forEach((nombre) => {
+    console.log(nombre);
+  });
+
 }
-addition(4, 9); // 13
+addition(4, 9, 5, 415, 78, 54, 5);
+// 4
+// 9
+// 5
+// 415
+// 78
+// 54
+// 5
