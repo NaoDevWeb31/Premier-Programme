@@ -1,5 +1,5 @@
 //                              LES ÉVÈNEMENTS
-/****** Les écouteurs ******/
+/****** Les écouteurs via les propriétés JavaScript ******/
 
 let a = document.querySelector("a");
 let button = document.querySelector("button");
@@ -18,6 +18,7 @@ a.onclick = () => {
   }
 };
 
+// Au survol de la souris
 // Challenge
 button.onmouseover = () => {
   document.body.style.backgroundColor = "orange";
