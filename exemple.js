@@ -1,7 +1,7 @@
-//                              Document Object Model (DOM)
-/****** Supprimer des éléments du DOM ******/
+//                              LE STYLE
+/****** Modifier le style des éléments ******/
 
-// let h1 = document.querySelector("h1");
-// h1.remove();
+// 1ère méthode : décomposée
+let header = document.querySelector("header");
 
-document.querySelector("h1").remove();
+header.style
