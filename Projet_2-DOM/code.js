@@ -5,6 +5,11 @@ document.querySelector("#a-supprimer").remove();
 let header = document.createElement("header");
 document.body.insertBefore(header, document.querySelector("script"));
 header.style.backgroundColor = "#e3b04b";
+header.style.margin = "-1rem -0.5rem 0rem -0.5rem";
+header.style.padding = "2rem";
+header.innerHTML = `<h1>Bienvenue</h1>`;
+header.style.color = "white";
+header.style.textAlign = "center";
 
 // Créer un sous-header
 let sousHeader = document.createElement("header");
