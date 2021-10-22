@@ -17,6 +17,7 @@ document.body.insertBefore(sousHeader, document.querySelector("script"));
 sousHeader.style.backgroundColor = "#f1d6ab";
 sousHeader.style.margin = "0rem -0.5rem";
 sousHeader.style.padding = "2rem";
+sousHeader.innerHTML = `<a href='#'>Accueil</a> / <a href='#'>Une autre page</a>`;
 
 // Créer un paragraphe
 let p = document.createElement("p");
