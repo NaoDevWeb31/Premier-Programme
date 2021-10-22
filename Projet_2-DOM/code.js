@@ -15,6 +15,8 @@ header.style.textAlign = "center";
 let sousHeader = document.createElement("header");
 document.body.insertBefore(sousHeader, document.querySelector("script"));
 sousHeader.style.backgroundColor = "#f1d6ab";
+sousHeader.style.margin = "0rem -0.5rem";
+sousHeader.style.padding = "2rem";
 
 // Créer un paragraphe
 let p = document.createElement("p");
