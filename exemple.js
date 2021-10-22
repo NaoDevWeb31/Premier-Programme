@@ -1,15 +1,41 @@
-//                              LE STYLE
-/****** Modifier le style des éléments ******/
+//                              DOM
+/****** Ensemble des fonctions et propriétés principales liées au DOM ******/
 
-// 1ère méthode : décomposée
-let header = document.querySelector("header");
+Accéder aux éléments
+  • getElementsByTagName() - Sélectionne tous les éléments avec la balise entre parenthèses
 
-header.style.backgroundColor = "#FFBD69";
+  • getElementById() - Sélectionne un seul élément : le premier ayant l'ID entre parenthèses
 
-// 2e méthode : directe
-document.querySelector("h1").style.color = "#111D5E";
-  // Challenge
-  document.querySelector("h1").style.textAlign = "center";
+  • getElementsByClassName() - Sélectionne tous les éléments avec la classe entre parenthèses
 
-// 3 méthode : avec une classe
-document.querySelector("header").className = "ma_class";
+  • querySelector() - Sélectionne un seul élément : celui avec le sélecteur entre parenthèses
+
+  • querySelectorAll() - Sélectionne tous les éléments avec le sélecteur entre parenthèses
+
+
+
+Modifier les éléments
+• textContent - Modifie le texte d'un élément
+
+• innerHTML - Modifie l'HTML d'un élément
+
+
+
+Ajouter et supprimer des éléments
+• createElement() - Crée un élément
+
+• prepend() - Ajoute l'élément entre parenthèses devant l'élément cible
+
+• append() - Ajouter l'élément entre parenthèses derrière l'élément cible (peut contenir du texte)
+
+• appendChild() - Ajouter l'élément entre parenthèses derrière l'élément cible (ne peut pas contenir du texte)
+
+• insertBefore() - Insère un élément avant l'élément cible
+
+
+
+Modifier le style d'un élément
+• style.propriété - Modifie la propriété CSS spécifiée
+  •• style.color = "orange"
+
+• className - Modifie les classes d'un élément
