@@ -1,10 +1,28 @@
 //                              LES ÉVÈNEMENTS
-/****** Planifier l'exécution d'un script ******/
+/****** Ensemble des évènements principaux ******/
 
-// setTimeout
-let timer = setTimeout("alert('Bonjour')", 3000); // Popup "Bonjour" s'affiche au bout de 3s
-clearTimeout(timer); // Arrêter le timer
+🔹 Les écouteurs .on et les propriétés JavaScript
+    • .onfocus - Quand l'utilisateur sélectionne l'élément
 
-// setInterval
-let interval = setInterval("alert('Bonjour')", 5000); // Popup "Bonjour" s'affiche toutes les 5s après sa fermeture
-clearInterval(interval); // Arrêter l'interval
+    • .onchange - Quand l'utilisateur change la valeur de l'élément
+
+    • .onclick - Quand l'utilisateur clique sur l'élément
+
+    • .ondblclick - Quand l'utilisateur double-clique sur l'élément
+
+    • .onkeypress - Quand l'utilisateur appuie sur une touche du clavier dans l'élément
+
+
+
+🔹 Les évènements avec .addEventListener
+    • "click" - Quand l'utilisateur clique sur l'élément
+
+    • "mouseover" - Quand l'utilisateur passe avec sa souris au-dessus d'un élément
+
+    • "mouseout" - Quand l'utilisateur sort avec sa souris d'un élément
+
+    • "copy" - Quand l'utilisateur copie un élément
+
+    • "cut" - Quand l'utilisateur coupe un élément
+
+    • "paste" - Quand l'utilisateur colle un élément
