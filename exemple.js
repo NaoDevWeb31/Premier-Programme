@@ -17,4 +17,7 @@ h1.append("test"); // Bienvenue sur mon site !test
 
   // Ajouter l'élément à la page
     // #1
-    document.body.append(helloWorld);
+    // document.body.append(helloWorld);
+
+    // #2
+    document.body.appendChild(helloWorld); // Préférer append à appendChild => ne peut pas passer de texte
