@@ -23,4 +23,7 @@ h1.append("test"); // Bienvenue sur mon site !test
     // document.body.appendChild(helloWorld); // Préférer append à appendChild => ne peut pas passer de texte
     
     // #3 - avant
-    document.body.insertBefore(helloWorld, document.querySelector(".container")); // (élément à insérer, emplacement)
+    // document.body.insertBefore(helloWorld, document.querySelector(".container")); // (élément à insérer, emplacement)
+    
+    // #4 - avant
+    document.querySelector(".container").prepend(helloWorld);
