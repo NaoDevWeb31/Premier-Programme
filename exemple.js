@@ -1,5 +1,7 @@
 //                              Document Object Model (DOM)
 /****** Supprimer des éléments du DOM ******/
 
-let h1 = document.querySelector("h1");
-h1.remove();
+// let h1 = document.querySelector("h1");
+// h1.remove();
+
+document.querySelector("h1").remove();
