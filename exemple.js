@@ -16,4 +16,5 @@ h1.append("test"); // Bienvenue sur mon site !test
   helloWorld.textContent = "Hello World !";
 
   // Ajouter l'élément à la page
-  
+    // #1
+    document.body.append(helloWorld);
