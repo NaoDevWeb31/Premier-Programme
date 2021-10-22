@@ -16,8 +16,11 @@ h1.append("test"); // Bienvenue sur mon site !test
   helloWorld.textContent = "Hello World !";
 
   // Ajouter l'élément à la page
-    // #1
+    // #1 - après
     // document.body.append(helloWorld);
 
-    // #2
-    document.body.appendChild(helloWorld); // Préférer append à appendChild => ne peut pas passer de texte
+    // #2 - après
+    // document.body.appendChild(helloWorld); // Préférer append à appendChild => ne peut pas passer de texte
+    
+    // #3 - avant
+    document.body.insertBefore(helloWorld, document.querySelector(".container")); // (élément à insérer, emplacement)
