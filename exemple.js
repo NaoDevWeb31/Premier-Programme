@@ -5,6 +5,15 @@
 document.write("test"); // "test" écrit à la suite du contenu textuel
 
 // 2e méthode : Ajouter un élément brut
-document.body.append("test"); // à la suite du contenu textuel
 let h1 = document.querySelector("h1");
 h1.append("test"); // Bienvenue sur mon site !test
+
+// 3e méthode : pour les objets
+  // Créer l'élément (balise)
+  let helloWorld = document.createElement("div");
+
+  // Personnaliser l'élément
+
+
+  // Ajouter l'élément à la page
+  
