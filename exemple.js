@@ -20,7 +20,7 @@ function start() {
 /// Puis, vérifiez si secondes vaut 0
 /// Si c’est le cas, appelez la fonction stop()
 /// sinon, affichez dans la page HTML, grâce à JavaScript, le nombre de secondes restantes (par exemple, s’il reste 5 secondes, écrivez « 5 » dans la page, à la suite des autres secondes, comme dans l’exemple ci-dessus)
-let secondes = 5;
+let secondes = 10;
 
 function decompte() {
   secondes--;
@@ -29,4 +29,10 @@ function decompte() {
   } else {
     document.body.innerHTML += `<div style="text-align:center; font-size:1.5rem; margin: 0rem 0em 1rem 0em;">${secondes}</div>`;
   }
+}
+
+// Étape 6 - Créez une fonction stop() qui arrêtera l’intervalle et qui se chargera d’écrire « Stop ! » dans la page
+function stop() {
+  clearInterval(interval);
+  document.body.innerHTML += `<div style="text-align:center; font-size:3rem">Stop !</div>`;
 }
