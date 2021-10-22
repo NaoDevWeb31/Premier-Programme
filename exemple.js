@@ -1,31 +1,15 @@
 //                              LES ÉVÈNEMENTS
-/****** Les écouteurs via le gestionnaire d'évènements ******/
+/****** Gérer la propagations des évènements ******/
 
-let a = document.querySelector("a");
-let button = document.querySelector("button");
+let article = document.querySelector("article");
+let h1 = document.querySelector("h1");
 
-// Au clic du lien
-a.addEventListener("click", () => {
-  if (confirm("Êtes-vous sûr ?")) {
-    location.href = "https://believemy.com";
-  }
+// Parent
+article.addEventListener("click", () => {
+  alert("article cliqué"); // article cliqué
 });
 
-// Challenge //
-// Au survol du bouton
-button.addEventListener("mouseover", () => {
-  document.body.style.backgroundColor = "orange";
+// Enfant
+h1.addEventListener("click", () => {
+  alert("titre cliqué"); // titre cliqué & article cliqué
 });
-
-function backgroundNone() {
-  document.body.style.backgroundColor = "";
-}
-
-// Souris en dehors du bouton
-button.addEventListener("mouseout", backgroundNone);
-button.addEventListener("mouseout", () => {
-  document.body.style.fontFamily = "serif";
-});
-
-// Supprimer un évènement
-button.removeEventListener("mouseout", backgroundNone);
