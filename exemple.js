@@ -16,7 +16,16 @@ a.addEventListener("click", () => {
 button.addEventListener("mouseover", () => {
   document.body.style.backgroundColor = "orange";
 });
-// Souris en dehors du bouton
-button.addEventListener("mouseout", () => {
+
+function backgroundNone() {
   document.body.style.backgroundColor = "";
+}
+
+// Souris en dehors du bouton
+button.addEventListener("mouseout", backgroundNone);
+button.addEventListener("mouseout", () => {
+  document.body.style.fontFamily = "serif";
 });
+
+// Supprimer un évènement
+button.removeEventListener("mouseout", backgroundNone);
