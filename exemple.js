@@ -1,10 +1,11 @@
 //                  BROWSER OBJECT MODEL (BOM)
-// Objet "History" //
-• Avoir une action sur l'historique de nos utilisateurs
-• Sauf dans le cas de la navigation privée
+// Objet "Location" //
+• Déterminer l'emplacement (web) de l'utilisateur
+• Avoir une action sur l'URL de l'utilisateur
+• Donner des informations relatives aux adresses
 
-// Page précédente
-history.back();
+// Recharger une page
+location .reload();
 
-// Page suivante (si existante)
-history.forward();
+// Rediriger
+location.href();
