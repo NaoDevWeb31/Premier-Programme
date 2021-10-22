@@ -1,28 +1,23 @@
-//                  LE SPREAD OPERATOR
-// // Opérateur de décomposition
+//                  BROWSER OBJECT MODEL (BOM)
+// Objet "Window" //
+• Objet global
+• La base de tous les autres objets du navigateur
+• Action sur la fenêtre du navigateur
 
-// Exemple 1 : fusionner plusieurs tableaux
-  let fruits = ["fraise", "banane", "poire"];
-  // Décomposer les éléments du tableau "fruits" un à un et les ajoute au tableau "aliments"
-  let aliments = ["chocolat", "sucre", "lait", ...fruits];
 
-  // console.log(aliments); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poire']
+// Ouvrir une fenêtre
+  window.open("https://believemy.com");
 
-// Exemple 2 : découper une chaîne de caractères en plusieurs éléments
-  let phrase = "Bonjour !";
-  // Décomposer les caractères de la chaîne
-  let phraseTableau = [...phrase];
+// Redimensionner une fenêtre
+  let fenetre = window.open("https://believemy.com", "", "width=900, height=700");
 
-  // console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
+  function resize() {
+    fenetre.resizeTo(700, 470);
+  }
 
-// Exemple 3 : sélectionner un élément, et stocker les autres dans une variable
-    // Sans décomposition
-  let devises = ["dollars", "euro", "yen"];
-  // let premiereDevise = devises[0];
-  // let autres = [devises[1], devises[2]];
+// Fermer une fenêtre
+  let fenetre = window.open("https://believemy.com", "", "width=900, height=700");
 
-    // Avec décomposition
-  let [premiereDevise, ...autres] = devises;
-
-  console.log(premiereDevise); // dollars
-  console.log(autres); //['euro', 'yen']
+  function resize() {
+    fenetre.close();
+  }
