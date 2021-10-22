@@ -19,6 +19,9 @@ sousHeader.style.margin = "0rem -0.5rem";
 sousHeader.style.padding = "2rem";
 sousHeader.innerHTML = `<a href='#'>Accueil</a> / <a href='#'>Une autre page</a>`;
 
+let links = sousHeader.querySelectorAll("a");
+links.forEach(link => link.style.color = "#167BFF");
+
 // Créer un paragraphe
 let p = document.createElement("p");
 document.body.insertBefore(p, document.querySelector("script"));
