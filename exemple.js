@@ -8,3 +8,5 @@ header.style.backgroundColor = "#FFBD69";
 
 // 2e méthode : directe
 document.querySelector("h1").style.color = "#111D5E";
+  // Challenge
+  document.querySelector("h1").style.textAlign = "center";
