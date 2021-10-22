@@ -10,6 +10,7 @@ article.addEventListener("click", () => {
 });
 
 // Enfant
-h1.addEventListener("click", () => {
+h1.addEventListener("click", (e) => {
   alert("titre cliqué"); // titre cliqué & article cliqué
+  e.stopPropagation(); // On stoppe la propagation => titre cliqué
 });
