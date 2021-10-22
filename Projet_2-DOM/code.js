@@ -6,10 +6,11 @@ let header = document.createElement("header");
 document.body.insertBefore(header, document.querySelector("script"));
 header.style.backgroundColor = "#e3b04b";
 header.style.margin = "-1rem -0.5rem 0rem -0.5rem";
-header.style.padding = "2rem";
+header.style.padding = "1rem";
 header.innerHTML = `<h1>Bienvenue</h1>`;
 header.style.color = "white";
 header.style.textAlign = "center";
+header.style.fontSize = "1.5rem";
 
 // Créer un sous-header
 let sousHeader = document.createElement("header");
