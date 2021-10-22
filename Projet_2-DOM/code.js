@@ -19,3 +19,4 @@ sousHeader.style.backgroundColor = "#f1d6ab";
 // Créer un paragraphe
 let p = document.createElement("p");
 document.body.insertBefore(p, document.querySelector("script"));
+p.textContent = "Ceci est un paragraphe crée avec JavaScript !";
