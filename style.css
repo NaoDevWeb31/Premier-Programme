@@ -14,6 +14,12 @@ header {
 }
 
 .container {
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
+}
+
+.ma_class {
+  background: #e65c00;
+  background: -webkit-linear-gradient(to right, #f9d423, #e65c00);
+  background: linear-gradient(to right, #f9d423, #e65c00);
 }

@@ -10,3 +10,6 @@ header.style.backgroundColor = "#FFBD69";
 document.querySelector("h1").style.color = "#111D5E";
   // Challenge
   document.querySelector("h1").style.textAlign = "center";
+
+// 3 méthode : avec une classe
+document.querySelector("header").className = "ma_class";
