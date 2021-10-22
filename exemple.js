@@ -1,15 +1,12 @@
 //                  BROWSER OBJECT MODEL (BOM)
-// Objet "Screen" //
-• Donner des informations sur l'écran de l'utilisateur
-  •• palette de couleurs utilisée
-  •• taille de l'écran
-  •• résolution
-
-// Largeur de l'écran
-screen.availWidth; // 1280px
-
-// Hauteur de l'écran
-screen.availHeight; // 777px
-
-// Résolution
-screen.pixelDepth; // 24
+// Objet "Document" //
+• Agir sur le document (site internet) de l'utilisateur
+• Avoir des actions sur le HTML du site internet
+  •• ajouter des éléments
+  •• modifier des éléments
+  •• supprimer des éléments
+  •• écouter des évènements
+  •• etc.
+• Objet le plus sollicité avec JavaScript
+• Permet d'avoir des interactions entre JavaScript et le site internet
+• Permet de faire des effets grâce à JavaScript
