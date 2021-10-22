@@ -4,4 +4,4 @@
 // 1ère méthode : décomposée
 let header = document.querySelector("header");
 
-header.style.backgroundColor = "red";
+header.style.backgroundColor = "#FFBD69";
