@@ -14,4 +14,15 @@ let hidden = true;
 div.style.visibility = "hidden";
 
 // Au clic du bouton
-btn.addEventListener("click");
+btn.addEventListener("click", () => {
+  // Si hidden = true
+  if (hidden) {
+    div.style.visibility = "visible"; // afficher le message
+    btn.textContent = "Cacher"; // le bouton dit "Cacher"
+    hidden = false;
+  } /* Sinon */ else {
+    div.style.visibility = "hidden"; // cacher le message
+    btn.textContent = "Afficher"; // le bouton dit "Afficher"
+    hidden = true;
+  }
+});
