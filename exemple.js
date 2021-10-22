@@ -12,8 +12,8 @@ h1.append("test"); // Bienvenue sur mon site !test
   // Créer l'élément (balise)
   let helloWorld = document.createElement("div");
 
-  // Personnaliser l'élément
-
+  // Personnaliser l'élément - Challenge
+  helloWorld.textContent = "Hello World !";
 
   // Ajouter l'élément à la page
   
