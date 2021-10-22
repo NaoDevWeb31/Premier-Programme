@@ -10,4 +10,8 @@ let btn = document.querySelector("button");
 let div = document.querySelector("div");
 let hidden = true;
 
+// Cacher le message dès le départ
+div.style.visibility = "hidden";
+
+// Au clic du bouton
 btn.addEventListener("click");
