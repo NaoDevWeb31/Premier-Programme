@@ -17,3 +17,11 @@ a.onclick = () => {
     location.href = "https://believemy.com";
   }
 };
+
+// Challenge
+button.onmouseover = () => {
+  document.body.style.backgroundColor = "orange";
+};
+button.onmouseout = () => {
+  document.body.style.backgroundColor = "";
+};
