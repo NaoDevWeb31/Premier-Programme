@@ -1,23 +1,19 @@
 //                  BROWSER OBJECT MODEL (BOM)
-// Objet "Window" //
-• Objet global
-• La base de tous les autres objets du navigateur
-• Action sur la fenêtre du navigateur
+// Objet "Navigator" //
+• Fournir tout un tas d'informations sur le navigateur de nos utilisateurs
+• Pour certaines, demander une permission grâce à une boîte de dialogue
+• Récupérer la position géographique de l'utilisateur
+• Permet d'utiliser certaines fonctionnalités du navigateur
+  •• géolocalisation
+  •• langue de l'utilisateur
+  •• etc.
+• ex: Afficher la date dans le bon format en récupérant la langue de l'utilisateur
 
+// Les cookies sont-ils autorisés ?
+navigator.cookieEnabled; // true
 
-// Ouvrir une fenêtre
-  window.open("https://believemy.com");
+// Système d'exploitation ?
+navigator.platform; // MacIntel
 
-// Redimensionner une fenêtre
-  let fenetre = window.open("https://believemy.com", "", "width=900, height=700");
-
-  function resize() {
-    fenetre.resizeTo(700, 470);
-  }
-
-// Fermer une fenêtre
-  let fenetre = window.open("https://believemy.com", "", "width=900, height=700");
-
-  function resize() {
-    fenetre.close();
-  }
+// Langue du navigateur ?
+navigator.language;  fr-FR
