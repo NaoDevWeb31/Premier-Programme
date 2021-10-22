@@ -1,10 +1,5 @@
 //                              LES ÉVÈNEMENTS
 /****** Les écouteurs ******/
 
-// Méthode la plus ancienne
-❌  Déconseillé car vieillissante
-
-👉 On insère un attribut HTML lié à l'évènement qu'on veut capturer
-  • onClick
-  • onMouseOver
-  • onMouseOut
+let a = document.querySelector("a");
+let button = document.querySelector("button");
