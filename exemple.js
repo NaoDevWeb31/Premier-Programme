@@ -4,4 +4,9 @@
 let a = document.querySelector("a");
 let button = document.querySelector("button");
 
-a.addEventListener("click")
+// Au clic du lien
+a.addEventListener("click", () => {
+  if (confirm("Êtes-vous sûr ?")) {
+    location.href = "https://believemy.com";
+  }
+});
