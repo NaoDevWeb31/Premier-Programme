@@ -7,6 +7,7 @@ let formulaire = document.querySelector("#formulaire");
 error.style.display = "none";
 
 // Étape 3 - Générer un nombre aléatoire
+let nombreAleatoire = Math.floor(Math.random() * 1001);
 
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
 
