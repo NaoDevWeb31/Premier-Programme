@@ -28,4 +28,10 @@ function Utilisateur(prenom, nom, email) {
 var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
 var bill = new Utilisateur("Bill", "Gates", "bill@gatenotes.com");
 
-mark.sePresenter();
+// mark.sePresenter();
+// console.log(mark);
+
+mark.poste = "PDG de Facebook";
+
+console.log(mark);
+console.log(bill);
