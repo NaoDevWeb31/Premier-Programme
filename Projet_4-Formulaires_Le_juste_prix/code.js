@@ -30,11 +30,23 @@ function verifier(nombre) {
     instruction.className = "instruction fini";
     // Désactiver le champ de formulaire
     input.disabled = true;
+    // Après 1s, demander à l'utilisateur s'il souhaite recommencer
+    setTimeout(() => {
+        var recommencer = confirm("Souhaitez-vous refaire une partie ?");
+        if (recommencer) {
+            // Si oui, actualiser la page
+            location.reload();
+        }
+    }, 1500);
   }
   
     // Ajouter l'élément devant les autres
     var instructions = document.querySelector("#instructions");
     instructions.prepend(instruction);
+    // Retirer la classe container--custom quand le bloc d'instructions 
+    if(instructions.children.length > 0){
+        document.querySelector("div.container").className = "container";
+    }
 }
 
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
