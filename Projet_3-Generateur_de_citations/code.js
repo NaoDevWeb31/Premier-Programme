@@ -27,3 +27,7 @@ let citations = [
 let citation = document.querySelector("#citation");
 let auteur = document.querySelector("#auteur");
 let nouvelleCitation = document.querySelector("#nouveau");
+
+// Les variables utiles au fonctionnement du projet
+let dernier = 0; // index de la question actuellement affichée
+let nombreAleatoire = 0; // nombre aléatoire généré
