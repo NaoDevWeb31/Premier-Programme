@@ -32,6 +32,11 @@ let nouvelleCitation = document.querySelector("#nouveau");
 let dernier = 0; // index de la question actuellement affichée
 let nombreAleatoire = 0; // nombre aléatoire généré
 
+// La fonction qui génère un nombre aléatoire
+function genererNombreEntier(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
 // Clic du bouton "Nouvelle Citation"
 nouvelleCitation.addEventListener("click", () => {
     

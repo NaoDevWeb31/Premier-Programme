@@ -37,3 +37,16 @@ _Recommandation_ : Déclarez vos variables au début de votre fichier JavaScript
 Détectez lorsque le bouton "Nouvelle Citation" est cliqué.
 
 _Recommandation_ : Reprenez ce que nous avons vu dans les sessions précédentes avec les évènements si vous n'y arrivez pas.
+
+#### Étape 5 : Générer un nombre aléatoire
+
+Votre bouton vient d'être cliqué et vous venez d'être alerté par JavaScript.
+Générez un nombre aléatoire, qui nous permettra d'avoir un nombre entier entre 0 et 5, si nous avons 6 éléments dans notre tableau.
+
+- Pour générer un nombre aléatoire avec JavaScript, il faut utiliser la fonction `Math.random()`. Elle génère un nombre à virgule (donc un flottant), entre 0 et 1
+
+- Utilisez ma fonction `genererNombreEntier(max)`, qui prend en paramètre le **nombre d'éléments dans votre tableau de citations**. N'hésitez pas à la réutiliser !
+  - Cette fonction utilise la fonction `Math.floor()` qui renvoie le plus grand entier qui est inférieur ou égal à un nombre.
+  - Par exemple, si je fais `Math.floor(5.8)`, elle me renvoie 5.
+
+_Recommandation_ : Utilisez une boucle `do...while` pour cette étape. Ceci vous permettra de générer un nombre tant que ce dernier est égal au nombre de la variable `dernier`. Afin de ne pas afficher deux fois de suite la même citation.
