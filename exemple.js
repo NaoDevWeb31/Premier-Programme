@@ -2,14 +2,15 @@
 /****** Créer un objet littéral ******/
 
 let mark = {
-  prenom: "Mark",
+  prenom: "Mark", // propriété
   nom: "Zuckerberg",
   email: "mark@facebook.com",
+
   // Ajouter une méthode : fonction liée à un objet (ou à une classe)
-    /// À l'ancienne
+  /// À l'ancienne
   sePresenter: function () {
-    console.log("Bonjour");
+    console.log("Bonjour, je m'appelle " + mark.prenom);
   },
 };
 
-mark.sePresenter()
+mark.sePresenter();
