@@ -1,0 +1,58 @@
+html,
+body {
+  background-image: linear-gradient(to left, #feada6 0%, #f5efef 100%);
+  min-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 20vh;
+  }
+}
+
+header {
+  color: #004085;
+  text-align: center;
+  font-size: 3em;
+}
+
+#instructions {
+  color: white;
+}
+
+.instruction {
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.plus {
+  background-color: #f67280;
+}
+
+.moins {
+  background-color: #ffa372;
+}
+
+.fini {
+  background-color: #0c9463;
+}
+
+#btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1d2b64 0%,
+    #f8cdda 51%,
+    #1d2b64 100%
+  );
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+}
+
+#btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
