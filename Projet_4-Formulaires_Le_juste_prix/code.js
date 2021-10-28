@@ -13,20 +13,21 @@ let coups = 0;
 let nombreChoisi;
 
 // Étape 6 - Créer la fonction vérifier
+
 function verifier(nombre) {
   let instruction = document.createElement("div");
   if (nombre < nombreAleatoire) {
     // C'est plus
-    // Ajouter un contenu "#1 (4) C'est plus !"
-    // Ajouter les classes instructions et plus
+    instruction.textContent = "#" + coups + " (" + nombre + ") C'est plus !";
+    instruction.className = "instruction plus";
   } else if (nombre > nombreAleatoire) {
     // C'est moins
-    // Ajouter un contenu "#1 (4) C'est moins !"
-    // Ajouter les classes instructions et moins
+    instruction.textContent = "#" + coups + " (" + nombre + ") C'est moins !";
+    instruction.className = "instruction moins";
   } else {
     // Félicitations, vous avez trouvé le juste prix !
-    // Ajouter un contenu "#1 (4) Félicitations, vous avez trouvé le juste prix !"
-    // Ajouter les classes instructions et fini
+    instruction.textContent = "#" + coups + " (" + nombre + ") Félicitations, vous avez trouvé le juste prix !";
+    instruction.className = "instruction fini";
   }
 }
 
