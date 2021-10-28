@@ -8,6 +8,7 @@ error.style.display = "none";
 
 // Étape 3 - Générer un nombre aléatoire
 let nombreAleatoire = Math.floor(Math.random() * 1001);
+let coups = 0;
 
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
 input.addEventListener("keyup", () => {
@@ -27,6 +28,8 @@ formulaire.addEventListener("submit", (e) => {
     // Mettre notre bordure de formulaire en rouge (red)
     input.style.borderColor = "red";
   } else {
+    // Incrémenter les coups de 1
+    coups++;
     // Mettre notre bordure de formulaire en gris (silver)
     input.style.borderColor = "silver";
   }
