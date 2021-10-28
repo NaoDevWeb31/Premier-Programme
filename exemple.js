@@ -20,3 +20,6 @@ function Utilisateur(prenom, nom, email) {
   this.nom = nom; // mark.prenom = prenom
   this.email = email;
 }
+
+// On crée un objet
+var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
