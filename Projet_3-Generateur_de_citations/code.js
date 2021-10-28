@@ -31,3 +31,8 @@ let nouvelleCitation = document.querySelector("#nouveau");
 // Les variables utiles au fonctionnement du projet
 let dernier = 0; // index de la question actuellement affichée
 let nombreAleatoire = 0; // nombre aléatoire généré
+
+// Clic du bouton "Nouvelle Citation"
+nouvelleCitation.addEventListener("click", () => {
+    
+});

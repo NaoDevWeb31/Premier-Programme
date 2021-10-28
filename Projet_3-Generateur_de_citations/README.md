@@ -31,3 +31,9 @@ Créez les variables qui vont seront utiles pour faire fonctionner votre projet 
 - `nombreAleatoire` - contient le nombre aléatoire généré
 
 _Recommandation_ : Déclarez vos variables au début de votre fichier JavaScript, pour que vous puissiez les utiliser partout dans votre fichier ensuite.
+
+#### Étape 4 : Détecter le clic du bouton "Nouvelle Citation"
+
+Détectez lorsque le bouton "Nouvelle Citation" est cliqué.
+
+_Recommandation_ : Reprenez ce que nous avons vu dans les sessions précédentes avec les évènements si vous n'y arrivez pas.
