@@ -19,11 +19,13 @@ function Utilisateur(prenom, nom, email) {
   this.prenom = prenom; // l'objet en cours = l'objet créé à partir du constructeur
   this.nom = nom; // mark.prenom = prenom
   this.email = email;
+  this.sePresenter = () => {
+    console.log("Bonjour, je m'appelle " + this.prenom + " " + this.nom + " et vous pouvez me contacter à l'adresse email " + this.email);
+  };
 }
 
 // On crée un objet
 var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
 var bill = new Utilisateur("Bill", "Gates", "bill@gatenotes.com");
 
-console.log(mark.prenom);
-console.log(bill.prenom);
+mark.sePresenter();
