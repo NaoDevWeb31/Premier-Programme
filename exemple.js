@@ -16,3 +16,6 @@ function Oiseau(longueurDesAiles) {
 function Mammifere(typeDePoils) {
   this.typeDePoils = typeDePoils;
 }
+
+var perroquet = new Oiseau("grandes");
+console.log(perroquet);
