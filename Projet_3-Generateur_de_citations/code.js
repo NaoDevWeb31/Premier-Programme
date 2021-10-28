@@ -23,3 +23,7 @@ let citations = [
     ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
 ];
 
+// Les éléments nécessaires au fonctionnement du générateur
+let citation = document.querySelector("#citation");
+let auteur = document.querySelector("#auteur");
+let nouvelleCitation = document.querySelector("#nouveau");
