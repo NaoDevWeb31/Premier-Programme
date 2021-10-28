@@ -9,7 +9,7 @@ let mark = {
   // Ajouter une méthode : fonction liée à un objet (ou à une classe)
   /// À l'ancienne
   sePresenter: function () {
-    console.log("Bonjour, je m'appelle " + mark.prenom);
+    console.log("Bonjour, je m'appelle " + this.prenom);
   },
 };
 
