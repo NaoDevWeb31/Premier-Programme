@@ -50,3 +50,15 @@ Générez un nombre aléatoire, qui nous permettra d'avoir un nombre entier entr
   - Par exemple, si je fais `Math.floor(5.8)`, elle me renvoie 5.
 
 _Recommandation_ : Utilisez une boucle `do...while` pour cette étape. Ceci vous permettra de générer un nombre tant que ce dernier est égal au nombre de la variable `dernier`. Afin de ne pas afficher deux fois de suite la même citation.
+
+#### Étape 6 : Mettre à jour le contenu
+
+Après avoir généré un nombre aléatoire non-utilisé par la précédente citation, il ne faut plus que :
+
+- Stocker ce nombre dans la variable `nombreAleatoire`
+
+- Modifier le contenu de notre objet `citation` par la citation à l'index `nombreAleatoire` de notre tableau
+
+- Modifier l'auteur de notre objet `auteur` par l'auteur à l'index `nombreAleatoire` de notre tableau
+
+_Recommandation_ : Si vous avez du mal, essayez de revenir sur la session liée aux tableaux multi-dimensions !

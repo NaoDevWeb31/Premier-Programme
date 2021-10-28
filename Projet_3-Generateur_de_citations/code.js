@@ -37,7 +37,14 @@ function genererNombreEntier(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-// Clic du bouton "Nouvelle Citation"
+// Au clic du bouton "Nouvelle Citation"
 nouvelleCitation.addEventListener("click", () => {
-    
+    do {
+        nombreAleatoire = genererNombreEntier(citations.length); // générer un nombre aléatoire entre 0 et 20
+    } while (nombreAleatoire == dernier); // tant que le nombre aléatoire généré = à l'index de la question actuellement affichée
+
+
+    citation.textContent = citations[nombreAleatoire][0]; // afficher la citation ayant pour index le nombre aléatoire généré
+    auteur.textContent = citations[nombreAleatoire][1]; // afficher l'auteur de la citation ayant pour index le nombre aléatoire généré
+    dernier = nombreAleatoire; // index de la question actuellement affichée = nombre aléatoire généré
 });
