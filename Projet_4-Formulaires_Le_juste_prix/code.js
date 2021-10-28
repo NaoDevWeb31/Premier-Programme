@@ -4,6 +4,7 @@ let error = document.querySelector("small");
 let formulaire = document.querySelector("#formulaire");
 
 // Étape 2 - Cacher l'erreur
+error.style.display = "none";
 
 // Étape 3 - Générer un nombre aléatoire
 
