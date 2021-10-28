@@ -38,6 +38,7 @@ formulaire.addEventListener("submit", (e) => {
     nombreChoisi = input.value;
     // Réinitialiser le champ du formulaire
     input.value = "";
+    verifier(nombreChoisi);
   }
 });
 
