@@ -13,6 +13,11 @@ class Utilisateur {
     return this.prenom + " " + this.nom
   }
 
+  // Un setter (mutateur) permet de définir une propriété
+  set nomComplet(valeur){
+    [this.prenom, this.nom] = valeur.split(" "); // split() divise une chaîne de caractère à partir d'un séparateur pour faire un tableau
+  }
+
   sePresenter(){
     console.log("Je m'appelle " + this.prenom + " " + this.nom + " et vous pouvez me contacter à l'adresse email " + this.email + ".");
   }
@@ -20,6 +25,9 @@ class Utilisateur {
 
 var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
 console.log(mark.nomComplet); // Mark Zuckerberg
+
+mark.nomComplet = "Bill Gates";
+console.log(mark.nomComplet); // Bill Gates
 
 // class Animal {
 //   constructor(nombreDePattes, poids){
