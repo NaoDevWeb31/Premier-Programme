@@ -8,7 +8,9 @@ error.style.display = "none";
 
 // Étape 3 - Générer un nombre aléatoire
 let nombreAleatoire = Math.floor(Math.random() * 1001);
+
 let coups = 0;
+let nombreChoisi;
 
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
 input.addEventListener("keyup", () => {
@@ -32,6 +34,10 @@ formulaire.addEventListener("submit", (e) => {
     coups++;
     // Mettre notre bordure de formulaire en gris (silver)
     input.style.borderColor = "silver";
+    // Stocker le nombre choisi par l'utilisateur
+    nombreChoisi = input.value;
+    // Réinitialiser le champ du formulaire
+    input.value = "";
   }
 });
 
