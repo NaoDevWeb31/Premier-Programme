@@ -5,6 +5,11 @@ let mark = {
   prenom: "Mark",
   nom: "Zuckerberg",
   email: "mark@facebook.com",
+  // Ajouter une méthode : fonction liée à un objet (ou à une classe)
+    /// À l'ancienne
+  sePresenter: function () {
+    console.log("Bonjour");
+  },
 };
 
-console.log(mark.prenom);
+mark.sePresenter()
