@@ -28,6 +28,8 @@ function verifier(nombre) {
     // Félicitations, vous avez trouvé le juste prix !
     instruction.textContent = "#" + coups + " (" + nombre + ") Félicitations, vous avez trouvé le juste prix !";
     instruction.className = "instruction fini";
+    // Désactiver le champ de formulaire
+    input.disabled = true;
   }
   
     // Ajouter l'élément devant les autres
