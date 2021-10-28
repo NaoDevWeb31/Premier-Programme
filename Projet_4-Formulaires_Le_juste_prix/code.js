@@ -12,6 +12,24 @@ let nombreAleatoire = Math.floor(Math.random() * 1001);
 let coups = 0;
 let nombreChoisi;
 
+// Étape 6 - Créer la fonction vérifier
+function verifier(nombre) {
+  let instruction = document.createElement("div");
+  if (nombre < nombreAleatoire) {
+    // C'est plus
+    // Ajouter un contenu "#1 (4) C'est plus !"
+    // Ajouter les classes instructions et plus
+  } else if (nombre > nombreAleatoire) {
+    // C'est moins
+    // Ajouter un contenu "#1 (4) C'est moins !"
+    // Ajouter les classes instructions et moins
+  } else {
+    // Félicitations, vous avez trouvé le juste prix !
+    // Ajouter un contenu "#1 (4) Félicitations, vous avez trouvé le juste prix !"
+    // Ajouter les classes instructions et fini
+  }
+}
+
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
 input.addEventListener("keyup", () => {
   if (isNaN(input.value)) {
@@ -41,5 +59,3 @@ formulaire.addEventListener("submit", (e) => {
     verifier(nombreChoisi);
   }
 });
-
-// Étape 6 - Créer la fonction vérifier
