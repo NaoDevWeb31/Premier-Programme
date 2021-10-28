@@ -33,5 +33,31 @@ var bill = new Utilisateur("Bill", "Gates", "bill@gatenotes.com");
 
 mark.poste = "PDG de Facebook";
 
-console.log(mark);
-console.log(bill);
+// console.log(mark);
+// console.log(bill);
+
+function Logement(type, annee, placeDeParking, proprietaire) {
+  this.type = type;
+  this.annee = annee;
+  this.placeDeParking = placeDeParking;
+  this.proprietaire = proprietaire;
+}
+
+var appartementA = new Logement("Appartement", "2014", true, mark); // Mark est un objet
+
+console.log(appartementA.proprietaire.prenom); // Mark
+console.log(appartementA);
+/* Logement {
+  type: 'Appartement',
+  annee: '2014',
+  placeDeParking: true,
+  proprietaire: {
+    prenom: "Mark",
+    nom: "Zuckerberg",
+    email: "mark@facebook.com",
+    sePresenter: () => {
+      console.log("Bonjour, je m'appelle " + this.prenom + " " + this.nom + " et vous pouvez me contacter à l'adresse email " + this.email);
+    },
+    poste: "PDG de Facebook",
+  }
+}*/
