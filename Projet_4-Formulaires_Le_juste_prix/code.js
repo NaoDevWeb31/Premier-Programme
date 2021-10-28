@@ -29,6 +29,10 @@ function verifier(nombre) {
     instruction.textContent = "#" + coups + " (" + nombre + ") Félicitations, vous avez trouvé le juste prix !";
     instruction.className = "instruction fini";
   }
+  
+    // Ajouter l'élément devant les autres
+    var instructions = document.querySelector("#instructions");
+    instructions.prepend(instruction);
 }
 
 // Étape 4 - Vérifier que l'utilisateur donne bien un nombre
