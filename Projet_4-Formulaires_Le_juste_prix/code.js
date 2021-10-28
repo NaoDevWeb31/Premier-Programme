@@ -1,4 +1,7 @@
 // Étape 1 - Sélectionner nos éléments
+let input = document.querySelector("#prix");
+let error = document.querySelector("small");
+let formulaire = document.querySelector("#formulaire");
 
 // Étape 2 - Cacher l'erreur
 
