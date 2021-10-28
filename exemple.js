@@ -23,3 +23,7 @@ function Utilisateur(prenom, nom, email) {
 
 // On crée un objet
 var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
+var bill = new Utilisateur("Bill", "Gates", "bill@gatenotes.com");
+
+console.log(mark.prenom);
+console.log(bill.prenom);
