@@ -1,6 +1,7 @@
 //                              LA PROGRAMMATION ORIENTÉE OBJET
 /****** Créer un objet littéral ******/
 
+/// Généralement pas utilisé de cette façon
 let mark = {
   prenom: "Mark", // propriété
   nom: "Zuckerberg",
@@ -14,3 +15,12 @@ let mark = {
 };
 
 mark.sePresenter();
+
+/// Utilisé pour transmettre des informations
+function recevoirLesCoordonees() {
+  return { latitude: 35, longitude: 139 };
+}
+
+let coordonnes = recevoirLesCoordonees();
+console.log(coordonnes.latitude);
+console.log(coordonnes.longitude);
