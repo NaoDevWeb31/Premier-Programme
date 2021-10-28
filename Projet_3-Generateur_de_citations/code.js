@@ -35,6 +35,7 @@ let nombreAleatoire = 0; // nombre aléatoire généré
 // La fonction qui génère un nombre aléatoire
 function genererNombreEntier(max) {
     return Math.floor(Math.random() * Math.floor(max));
+    // 0.5193756799679448 * 21 = 10.9068892793 => 10
 }
 
 // Au clic du bouton "Nouvelle Citation"
