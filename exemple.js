@@ -1,5 +1,5 @@
 //                              LA PROGRAMMATION ORIENTÉE OBJET
-/****** Les prototypes (chaîne de prototypes) ******/
+/****** Créer un objet avec le constructeur Object ******/
 
 function Utilisateur(prenom, nom, email) {
   this.prenom = prenom;
@@ -15,4 +15,10 @@ function Utilisateur(prenom, nom, email) {
 var mark = new Utilisateur("Mark", "Zuckerberg", "mark@facebook.com");
 var bill = new Utilisateur("Bill", "Gates", "bill@gatenotes.com");
 
-console.log(mark); // prototype => _proto_ ajouté automatique par JS (connaître le constructeur de notre objet et le constructeur du constructeur)
+// console.log(mark); // On voit que JavaScript ajoute une propriété __proto__ et constructor
+
+// Créer un objet avec Object()
+var monObjet = new Object();
+monObjet.titre = "Le titre de l'objet";
+
+console.log(monObjet); // {titre: 'Le titre de l'objet'}
