@@ -1,19 +1,15 @@
 //                              UTILISONS LES REQUÊTES ASYNCHRONES, CALLBACKS & PROMISES
-/****** Les requêtes asynchrones ******/
+/****** Les promesses ******/
 
-// Attention, code puissant
+// En cours / Honorée / Rompue
 
-let i = 0;
-console.log("Fonction commencée");
+// Exemple : Discord(), app de discussion en ligne, permet de parler aussi par micro.
+    // Utilise l'asynchrone pour ne pas bloquer tant que vous n'acceptez pas l'utilisation du micro.
 
-while (i < 9999999999) {
-  i++;
-}
-console.log("Fonction terminée");
+const promesse = new Promise((resolve, reject) => {
+    // Tâches asynchrones
 
-// function direBonjour() {
-//   console.log("bonjour");
-// }
+    // Promesse honorée : resolve()
 
-// setTimeout(direBonjour, 3000); // code asynchrone
-// console.log("test");
+    // Promesse rompue : reject()
+});
