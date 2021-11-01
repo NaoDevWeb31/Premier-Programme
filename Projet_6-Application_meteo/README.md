@@ -4,3 +4,37 @@
 
 Dans ce projet, nous allons réaliser une application météo qui donnera la météo de n'importe quelle ville dans le monde.
 Ce projet nous permettra de faire des requêtes AJAX et d'apprendre à utiliser correctement les API des sites internet avec JavaScript.
+
+### Instructions
+
+#### Étape 1 : Comprendre le fonctionnement de l'API
+
+Dans cette première étape, la première chose qu'un bon développeur doit faire, c'est comprendre le fonctionnement de l'API qu'il va utiliser.
+Dans ce projet, nous allons récupérer la météo grâce à l'API de OpenWeatherMap. Et plus particulièrement, grâce à l'API qui permet de [récupérer la météo actuelle](https://openweathermap.org/current "API d'OpenWeatherMap").
+
+- **Pour utiliser cette API, vous devez vous inscrire gratuitement.**
+- Une fois que vous êtes inscrit, vous pouvez aller [sur cette page](https://home.openweathermap.org/api_keys "Récupérez votre clé secrète") pour récupérer votre clé secrète, elle vous sera utile pour la prochaine étape.
+
+Pour utiliser l'API de OpenWeatherMap, il va falloir utiliser l'url suivante :
+
+`https://api.openweathermap.org/data/2.5/weather?q=saint-saulve&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric`
+
+Comme vous pouvez le constater, nous avons plusieurs paramètres :
+
+- `q` - pour spécifier la ville (ici la merveilleuse ville de Saint-Saulve)
+
+- `appid` - pour spécifier votre clé secrète (la mienne ne l'est plus désormais !)
+
+- `units` - pour spécifier que nous voulons la température en Celsius
+
+#### Étape 2 : Construire la requête AJAX
+
+Nous allons maintenant construire notre requête AJAX ! Je ne vais vous aider que pour un seul point : 
+- intégrer la ville que vous souhaitez dans l'url. Pour pouvoir intégrer la ville dont vous souhaitez la température dans l'url, je vous invite à faire comme ceci :
+
+<pre><code>let ville = "Tokyo";
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric';
+</code></pre>
+
+**Pensez bien évidemment à changer la valeur "appid" par votre clé secrète** :smile:
