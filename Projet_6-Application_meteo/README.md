@@ -38,3 +38,14 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&app
 </code></pre>
 
 **Pensez bien évidemment à changer la valeur "appid" par votre clé secrète** :smile:
+
+#### Étape 3 : Mettre à jour l'interface
+
+Si vous êtes ici, c'est que vous avez réussi à récupérer et à afficher dans votre console la température de la ville que vous avez choisi ! Félicitations !
+
+Dans cette étape, vous devrez mettre à jour votre interface. J'entends par là :
+
+- Mettre à jour la température `#temperature_label`
+
+- Mettre à jour la ville `#ville`
+

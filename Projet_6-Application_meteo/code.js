@@ -15,7 +15,12 @@ requete.onload = function () {
   if (requete.readyState === XMLHttpRequest.DONE) {
     if (requete.status === 200) {
       let reponse = requete.response;
-      console.log(reponse);
+      let temperature = reponse.main.temp; // Récupérer la température
+      let ville = reponse.name; // Récupérer la ville
+      document.querySelector("#temperature_label").textContent = temperature; // Afficher la température
+      document.querySelector("#ville").textContent = ville; // Afficher la ville
+    } else {
+      alert("Un problème est intervenu, merci de revenir plus tard.");
     }
   }
 };
