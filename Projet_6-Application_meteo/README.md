@@ -49,3 +49,15 @@ Dans cette étape, vous devrez mettre à jour votre interface. J'entends par là
 
 - Mettre à jour la ville `#ville`
 
+#### Étape 4 : Détecter le clic du bouton "Changer de ville"
+
+Nous pouvons maintenant afficher la température de n'importe quelle ville du monde... enfin, presque. Car pour le moment, il faut modifier à chaque fois notre code. Ce serait beaucoup plus simple si nous pouvions utiliser le bouton "Changer de ville" pour afficher une boîte de dialogue à notre utilisateur, en lui proposant d'entrer le nom d'une ville, non ?
+
+Vous devez pour ça :
+
+- Sélectionner votre bouton `#changer`
+
+- Ajouter un évènement pour qu'au clic, une boîte de dialogue s'affiche et sauvegarde la ville choisie par l'utilisateur dans une variable `villeChoisie`
+
+Ne vous embêtez pas à vérifier si le nom de la ville existe vraiment, OpenWeatherMap est très bon de ce côté-là. Si la ville n'existe pas, l'API ne changera juste pas notre température. De plus, l'API prend directement en compte notre nom de ville, peu importe si elle a des majuscules ou non : OpenWeatherMap s'en charge ! Donc, demandez juste à votre utilisateur une ville.
+

@@ -1,3 +1,10 @@
+let changerDeVille = document.querySelector("#changer");
+let villeChoisie = "Paris";
+
+changerDeVille.addEventListener("click", () => {
+  villeChoisie = prompt("Quelle ville recherchez-vous ?");
+});
+
 let ville = "Paris";
 
 const url =
