@@ -3,9 +3,17 @@
 
 // Attention, code puissant
 
-function direBonjour() {
-  console.log("bonjour");
-}
+let i = 0;
+console.log("Fonction commencée");
 
-setTimeout(direBonjour, 3000); // code asynchrone
-console.log("test");
+while (i < 9999999999) {
+  i++;
+}
+console.log("Fonction terminée");
+
+// function direBonjour() {
+//   console.log("bonjour");
+// }
+
+// setTimeout(direBonjour, 3000); // code asynchrone
+// console.log("test");
