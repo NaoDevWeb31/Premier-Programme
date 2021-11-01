@@ -8,6 +8,9 @@ let dateActuelle = new Date();
 // toLocaleString     = jour, mois, année, heure
 // ON CHOISI LES OPTIONS QU'ON VEUT
 
+// Récupérer la langue du navigateur
+console.log(navigator.language); // fr-FR
+
 // Récupérer la date au format français
 let dateLocale = dateActuelle.toLocaleString("fr-FR", {
   weekday: "long", //  long (toutes les lettres), short (3 premières lettres), narrow (première lettre)
