@@ -41,3 +41,22 @@ class Magicien extends Personnage {
         personnage.verifierSante();
     }
 }
+
+// Étape 5 : Créer la classe Guerrier
+class Guerrier extends Personnage {
+    constructor(pseudo){
+        super(pseudo, "guerrier", 350, 50)
+    }
+    attaquer(personnage){
+        personnage.sante -= this.attaque;
+        console.log(this.pseudo + " attaque " + personnage.pseudo + " avec son épée (" + this.attaque + " dégâts)");
+        this.evoluer();
+        personnage.verifierSante();
+    }
+    coupSpecial(personnage){
+        personnage.sante -= this.attaque * 5; 
+        console.log(this.pseudo + "  attaque avec son coup spécial haches de guerre "+ personnage.pseudo + " (" + (this.attaque * 5) + " dégâts)");
+        this.evoluer();
+        personnage.verifierSante();
+    }
+}

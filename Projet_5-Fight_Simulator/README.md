@@ -73,7 +73,7 @@ Nous allons commencer par créer la classe `Personnage`. Voici un rappel de ce q
 
 #### Étape 4 : Créer la classe Magicien
 
-Nous allons commencer par créer la classe `Magicien`. Cette classe **hérite** de la classe Personnage, pensez donc à bien le préciser lorsque vous créez votre classe ! Voici un rappel de ce que vous devez faire :
+Il faut maintenant créer notre classe `Magicien`. Cette classe **hérite** de la classe Personnage, pensez donc à bien le préciser lorsque vous créez votre classe ! Voici un rappel de ce que vous devez faire :
 
 ##### Propriétés
 
@@ -92,3 +92,18 @@ Lorsque vous retirez des points de vie, vous devrez en venir à ce code :
 <pre><code>personnage.sante -= this.attaque;<br/>
 // OU POUR coupSpecial :<br/>
 personnage.sante -= this.attaque * 5;</code></pre>
+
+
+#### Étape 5 : Créer la classe Guerrier
+
+Il faut maintenant créer notre classe `Guerrier`. Ici, rien de bien nouveau avec la classe `Magicien`, faites juste attention à bien envoyer guerrier et non pas magicien par automatisme à la classe `Personnage` lorsque vous appelez son constructeur. Voici un rappel de ce que vous devez faire :
+
+##### Propriétés
+
+- Aucune. Se content d'appeler le constructeur de `Personnage`, en lui donnant en paramètres (pseudo, "guerrier", 350, 50). Donc vous l'aurez compris, pour initialiser un joueur, il faudra appeler le constructeur de la classe que nous voulons, et donner juste un pseudo. Le reste sera géré par la classe choisie (magicien ou guerrier).
+
+##### Méthodes :
+
+- `attaquer(personnage)` - Prend en paramètre le personnage adverse (donc un objet). Réduit la santé du personnage adverse selon le nombre de dégâts que fait le personnage en cours, et affiche "[pseudo] attaque [personnage.pseudo] avec son épée ([attaque] dégâts)". Ensuite, appelle la fonction `evoluer()`. Puis, appelle la fonction `verifierSante()` du personnage adverse.
+
+- `coupSpecial(personnage)` - Prend en paramètre le personnage adverse (donc un objet). Réduit la santé du personnage adverse selon le nombre de dégâts que fait le personnage en cours, fois 5, et affiche "[pseudo] attaque avec son coup spécial haches de guerre [personnage.pseudo] ([attaque * 5] dégâts)". Ensuite, appelle la fonction `evoluer()`. Puis, appelle la fonction `verifierSante()` du personnage adverse.
