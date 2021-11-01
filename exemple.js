@@ -1,28 +1,11 @@
-//                              UTILISER LES API
-/****** Envoyer des données ******/
+//                              UTILISONS LES REQUÊTES ASYNCHRONES, CALLBACKS & PROMISES
+/****** Les requêtes asynchrones ******/
 
-const url = "https://lesoublisdelinfo.com/api.php";
+// Attention, code puissant
 
-let requete = new XMLHttpRequest();
+function direBonjour() {
+  console.log("bonjour");
+}
 
-// GET
-// requete.open("GET", url);
-// requete.responseType = "json";
-// requete.send();
-
-// POST
-requete.open("POST", url);
-requete.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-requete.responseType = "json";
-requete.send("prenom=John"); // pour envoyer plusieurs paramètres => prenom=John&nom=Doe
-
-requete.onload = function () {
-  if (requete.readyState === XMLHttpRequest.DONE) {
-    if (requete.status === 200) {
-      let reponse = requete.response;
-      console.log(reponse);
-    } else {
-      alert("Un problème est intervenu, merci de revenir plus tard.");
-    }
-  }
-};
+setTimeout(direBonjour, 3000); // code asynchrone
+console.log("test");
