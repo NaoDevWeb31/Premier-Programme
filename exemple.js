@@ -31,6 +31,7 @@ function chargerScript(script) {
 
 const promesse = chargerScript("test.js");
 
+// Renvoi une erreur car le fichier test.js n'existe pas
 promesse.then(
     function (result) {
         console.log(result);
