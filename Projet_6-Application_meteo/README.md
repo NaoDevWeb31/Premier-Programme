@@ -61,3 +61,9 @@ Vous devez pour ça :
 
 Ne vous embêtez pas à vérifier si le nom de la ville existe vraiment, OpenWeatherMap est très bon de ce côté-là. Si la ville n'existe pas, l'API ne changera juste pas notre température. De plus, l'API prend directement en compte notre nom de ville, peu importe si elle a des majuscules ou non : OpenWeatherMap s'en charge ! Donc, demandez juste à votre utilisateur une ville.
 
+#### Étape 5 : Appeler la fonction recevoirTemperature(ville)
+
+Maintenant que nous avons récupéré la ville choisie par notre utilisateur, il faut passer cette ville en argument d'une fonction `recevoirTemperature(ville)`.
+
+Ce que je vous conseille, c'est d'englober votre requête AJAX dans cette fonction, et d'appeler cette fonction lorsque notre utilisateur nous donne une nouvelle ville. Pour lancer notre première température, nous pouvons également donner une ville par défaut, et appeler la fonction `recevoirTemperature` dès le premier chargement de notre page. Comme ça, notre application météo ne s'affichera pas sans température.
+
