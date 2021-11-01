@@ -18,6 +18,9 @@ requete.onload = function () {
       let reponse = requete.response; // On stocke la réponse
       let prixEnEuros = reponse.EUR.last;
       console.log(prixEnEuros);
+      document.querySelector("#price_label").textContent = prixEnEuros;
+    } else {
+      alert("Un problème est intervenu, merci de revenir plus tard.");
     }
   }
 };
