@@ -1,18 +1,22 @@
 //                              DEVENEZ MAÎTRE DU TEMPS
-/****** Les Getter et les Setter disponibles de l'objet Date ******/
+/****** Transformer une date au format local ******/
 
 let dateActuelle = new Date();
 
-// Récupérer l'année
-console.log(dateActuelle.getFullYear()); // 2021
+// toLocaleDateString = jour, mois, année
+// toLocaleTimeString = heure
+// toLocaleString     = jour, mois, année, heure
+// ON CHOISI LES OPTIONS QU'ON VEUT
 
-// Récupérer le jour de la semaine (0 pour dimanche, 6 pour samedi)
-console.log(dateActuelle.getDay()); // 1
+// Récupérer la date au format français
+let dateLocale = dateActuelle.toLocaleString("fr-FR", {
+  weekday: "long", //  long (toutes les lettres), short (3 premières lettres), narrow (première lettre)
+  year: "numeric", // numeric (xxxx), 2-digit (xx)
+  month: "long", // long, short, narrow, numeric, 2-digit
+  day: "numeric", // numeric, 2-digit
+  hour: "numeric", // numeric, 2-digit
+  minute: "numeric", // numeric, 2-digit
+  second: "numeric", // numeric, 2-digit
+});
 
-// Récupérer la date du jour
-console.log(dateActuelle.getDate()); // 1
-
-console.log(dateActuelle.getUTCDay()); // 1
-
-dateActuelle.setFullYear(2750);
-console.log(dateActuelle.getFullYear()); // 2750
+console.log(dateLocale); // lundi 1 novembre 2021, 13:02:52
