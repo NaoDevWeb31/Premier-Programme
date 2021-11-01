@@ -1,15 +1,18 @@
 //                              DEVENEZ MAÎTRE DU TEMPS
-/****** Utiliser l'objet Date ******/
+/****** Les Getter et les Setter disponibles de l'objet Date ******/
 
-// Déclarer une date
-let datePrecise = new Date(2780, 11, 10, 9, 39); // Wed Dec 10 2780 09:39:00 GMT+0100 (Central European Standard Time)
-console.log(datePrecise);
-// Au-dessus :
-//   - année (obligatoire)
-//   - mois (obligatoire) qui commence par 0
+let dateActuelle = new Date();
 
-//   - jour (facultatif) qui commence par 1
-//   - heure (facultatif) qui commence par 0
-//   - minute (facultatif) qui commence par 0
-//   - secondes (facultatif) qui commence par 0
-//   - millisecondes (facultatif) qui commence par 0
+// Récupérer l'année
+console.log(dateActuelle.getFullYear()); // 2021
+
+// Récupérer le jour de la semaine (0 pour dimanche, 6 pour samedi)
+console.log(dateActuelle.getDay()); // 1
+
+// Récupérer la date du jour
+console.log(dateActuelle.getDate()); // 1
+
+console.log(dateActuelle.getUTCDay()); // 1
+
+dateActuelle.setFullYear(2750);
+console.log(dateActuelle.getFullYear()); // 2750
