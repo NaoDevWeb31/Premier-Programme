@@ -1,3 +1,6 @@
+// Pour cacher la clé secrète
+var appid = config.OPEN_WEATHER_APPID;
+
 // Ville par défaut
 let villeChoisie = "Paris";
 recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de Paris
@@ -15,7 +18,9 @@ function recevoirTemperature(ville) {
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     ville +
-    "&appid=7f696922892169892adfe6c3b75c212c&units=metric";
+    "&appid=" +
+    appid +
+    "&units=metric";
 
   let requete = new XMLHttpRequest(); // Créer l'objet permettant de faire la requête
   requete.open("GET", url); // Récupérer les données
