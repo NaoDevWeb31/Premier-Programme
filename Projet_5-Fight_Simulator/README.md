@@ -70,7 +70,6 @@ Nous allons commencer par créer la classe `Personnage`. Voici un rappel de ce q
 
 - `informations()` - Affiche les informations du personnage "[pseudo] ([classe]) a [sante] points de vie et est au niveau [niveau]."
 
-
 #### Étape 4 : Créer la classe Magicien
 
 Il faut maintenant créer notre classe `Magicien`. Cette classe **hérite** de la classe Personnage, pensez donc à bien le préciser lorsque vous créez votre classe ! Voici un rappel de ce que vous devez faire :
@@ -93,7 +92,6 @@ Lorsque vous retirez des points de vie, vous devrez en venir à ce code :
 // OU POUR coupSpecial :<br/>
 personnage.sante -= this.attaque * 5;</code></pre>
 
-
 #### Étape 5 : Créer la classe Guerrier
 
 Il faut maintenant créer notre classe `Guerrier`. Ici, rien de bien nouveau avec la classe `Magicien`, faites juste attention à bien envoyer guerrier et non pas magicien par automatisme à la classe `Personnage` lorsque vous appelez son constructeur. Voici un rappel de ce que vous devez faire :
@@ -107,3 +105,25 @@ Il faut maintenant créer notre classe `Guerrier`. Ici, rien de bien nouveau ave
 - `attaquer(personnage)` - Prend en paramètre le personnage adverse (donc un objet). Réduit la santé du personnage adverse selon le nombre de dégâts que fait le personnage en cours, et affiche "[pseudo] attaque [personnage.pseudo] avec son épée ([attaque] dégâts)". Ensuite, appelle la fonction `evoluer()`. Puis, appelle la fonction `verifierSante()` du personnage adverse.
 
 - `coupSpecial(personnage)` - Prend en paramètre le personnage adverse (donc un objet). Réduit la santé du personnage adverse selon le nombre de dégâts que fait le personnage en cours, fois 5, et affiche "[pseudo] attaque avec son coup spécial haches de guerre [personnage.pseudo] ([attaque * 5] dégâts)". Ensuite, appelle la fonction `evoluer()`. Puis, appelle la fonction `verifierSante()` du personnage adverse.
+
+#### Étape 6 : Initialiser nos personnages et les faire combattre
+
+Dernière étape ! Félicitations, vous avez fait le plus dur.
+
+- Maintenant, il suffit d'initialiser nos objets.
+
+_Recommandations_ : Je vous recommande de définir un personnage comme ****magicien** et un autre comme ****guerrier**, vous pourrez ainsi voir le fruit de vos efforts récompensé en voyant toutes les subtilités que vous avez créé dans vos méthodes !
+
+##### Voici mon plan de combat :
+
+<pre><code>
+var gandalf = new Magicien('Gandalf');<br/>
+var thor    = new Guerrier('Thor');<br/>
+console.log(thor.informations);<br/>
+console.log(gandalf.informations);<br/>
+gandalf.attaquer(thor);<br/>
+console.log(thor.informations);<br/>
+thor.attaquer(gandalf);<br/>
+console.log(gandalf.informations);<br/>
+gandalf.coupSpecial(thor);
+</code></pre>

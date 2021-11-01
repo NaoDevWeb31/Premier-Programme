@@ -60,3 +60,18 @@ class Guerrier extends Personnage {
         personnage.verifierSante();
     }
 }
+
+// Étape 6 : Initialiser nos personnages et les faire combattre
+var gandalf = new Magicien("Gandalf");
+var thor = new Guerrier("Thor");
+
+console.log(thor.informations);
+console.log(gandalf.informations);
+
+gandalf.attaquer(thor);
+console.log(thor.informations);
+
+thor.attaquer(gandalf);
+console.log(gandalf.informations);
+
+gandalf.coupSpecial(thor);
