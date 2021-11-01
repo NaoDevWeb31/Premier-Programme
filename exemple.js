@@ -1,9 +1,13 @@
 //                              DEVENEZ MAÎTRE DU TEMPS
-/****** Récupérer la date actuelle ******/
+/****** Utiliser l'objet Date ******/
 
-// 1er janvier 1970 à minuit UTC (londres)
-let dateActuelle = Date(); // sous format textuel, norme anglo-saxonne
-console.log(dateActuelle); // Mon Nov 01 2021 12:38:00 GMT+0100 (Central European Standard Time)
+let datePrecise = new Date();
+// Au-dessus :
+//   - année (obligatoire)
+//   - mois (obligatoire) qui commence par 0
 
-let dateEnSecondes = Date.now();
-console.log(dateEnSecondes); // 1635766680923
+//   - jour (facultatif) qui commence par 1
+//   - heure (facultatif) qui commence par 0
+//   - minute (facultatif) qui commence par 0
+//   - secondes (facultatif) qui commence par 0
+//   - millisecondes (facultatif) qui commence par 0
