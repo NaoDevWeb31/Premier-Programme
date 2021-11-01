@@ -17,6 +17,17 @@ function chargerScript(script) {
   });
 }
 
+async function resultat() {
+  try {
+    const scriptA = await chargerScript("test.js");
+    console.log(scriptA);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+resultat();
+
 // Async et Await "sucres syntaxiques"
 // Utiliser les promesses de façon plus intuitives
 
