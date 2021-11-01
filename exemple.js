@@ -24,7 +24,8 @@ async function resultat() {
     const scriptB = await chargerScript("autre.js");
     console.log(scriptB);
   } catch (error) {
-    console.log(error); // Error: Opération impossible pour le script autre.js
+    console.log(error);
+    document.head.lastChild.remove();
   }
 }
 
