@@ -1,30 +1,22 @@
 //                              UTILISER LES API
-/****** Récupérer le prix du bitcoin (XMLHttpRequest) ******/
+/****** Envoyer des données ******/
 
-const url = "https://blockchain.info/ticker";
+const url = "https://lesoublisdelinfo.com/api.php";
 
-function recupererPrix() {
-  // Créer une requête
-  let requete = new XMLHttpRequest(); // Créer un objet
-  requete.open("GET", url); // 1er paramètre GET/POST // 2e paramètre : url
-  requete.responseType = "json"; // Nous attendons du JSON
-  requete.send(); // Nous envoyons la requête
+let requete = new XMLHttpRequest();
 
-  // Dès qu'on reçoit une réponse, cette fonction est exécutée
-  requete.onload = function () {
-    // Quand la requête est terminée
-    if (requete.readyState === XMLHttpRequest.DONE) {
-      // Si la requête a été traitée avec succès
-      if (requete.status === 200) {
-        let reponse = requete.response; // On stocke la réponse
-        let prixEnEuros = reponse.EUR.last;
-        document.querySelector("#price_label").textContent = prixEnEuros;
-      } else {
-        alert("Un problème est intervenu, merci de revenir plus tard.");
-      }
+// GET
+requete.open("GET", url);
+requete.responseType = "json";
+requete.send();
+
+requete.onload = function () {
+  if (requete.readyState === XMLHttpRequest.DONE) {
+    if (requete.status === 200) {
+      let reponse = requete.response;
+      console.log(reponse);
+    } else {
+      alert("Un problème est intervenu, merci de revenir plus tard.");
     }
-  };
-  console.log("Prix actualisé");
-}
-
-setInterval(recupererPrix, 1000);
+  }
+};
