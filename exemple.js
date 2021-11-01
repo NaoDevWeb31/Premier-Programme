@@ -30,3 +30,12 @@ function chargerScript(script) {
 }
 
 const promesse = chargerScript("test.js");
+
+promesse.then(
+    function (result) {
+        console.log(result);
+    },
+    function (error) {
+        console.log(error);
+    }
+);
