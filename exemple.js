@@ -1,46 +1,36 @@
 //                              UTILISONS LES REQUÊTES ASYNCHRONES, CALLBACKS & PROMISES
-/****** Les promesses ******/
-
-// En cours / Honorée / Rompue
-
-// Exemple : Discord(), app de discussion en ligne, permet de parler aussi par micro.
-    // Utilise l'asynchrone pour ne pas bloquer tant que vous n'acceptez pas l'utilisation du micro.
-
-// const promesse = new Promise((resolve, reject) => {
-//     // Tâches asynchrones
-
-//     // Promesse honorée : resolve()
-
-//     // Promesse rompue : reject()
-// });
+/****** Async et Await ******/
 
 function chargerScript(script) {
-    return new Promise((resolve, reject) => {
-        // Créer un nouvel élément
-        let element = document.createElement("script");
-        element.src = script;
-        document.head.append(element);
+  return new Promise((resolve, reject) => {
+    // Créer un nouvel élément
+    let element = document.createElement("script");
+    element.src = script;
+    document.head.append(element);
 
-        // Deux possibilités : resolve()
-        element.onload = () => resolve("Fichier " + script + " a été chargé");
+    // Deux possibilités : resolve()
+    element.onload = () => resolve("Fichier " + script + " a été chargé");
 
-        // reject()
-        element.onerror = () => reject(new Error("Opération impossible pour le script " + script));
-    });
+    // reject()
+    element.onerror = () =>
+      reject(new Error("Opération impossible pour le script " + script));
+  });
 }
 
-const promesse = chargerScript("test.js");
+// Async et Await "sucres syntaxiques"
+// Utiliser les promesses de façon plus intuitives
 
-// Renvoi une erreur car le fichier test.js n'existe pas
-// promesse.then(
-//     function (result) {
-//         console.log(result);
-//     },
-//     function (error) {
-//         console.log(error);
-//     }
-// );
+// "async" devant une fonction => la forcer à retourner une promesse & pouvoir utiliser 'await' dans celle-ci.
+async function direBonjour() {
+  const promesse = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Promesse tenue !"), 3000);
+  });
 
-// On peut aussi passer directement par la fonction elle-même
-chargerScript("test.js")
-.catch(console.log());
+  // On attend que la promesse soit honorée ou rejetée, un peu comme then(), mais de façon plus intuitive
+  // Si on place le mot-clé "await" devant une promesse, JavaScript est obligé d'attendre que celle-ci soit terminée.
+  // Si elle est rompue, alors, il générera une exception.
+  let resultat = await promesse;
+  console.log(resultat);
+}
+
+direBonjour(); // Promesse tenue !
