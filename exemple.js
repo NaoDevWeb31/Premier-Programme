@@ -16,7 +16,8 @@ requete.onload = function () {
     // Si la requête a été traitée avec succès
     if (requete.status === 200) {
       let reponse = requete.response; // On stocke la réponse
-      console.log(reponse);
+      let prixEnEuros = reponse.EUR.last;
+      console.log(prixEnEuros);
     }
   }
 };
