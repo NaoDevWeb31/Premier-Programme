@@ -32,11 +32,15 @@ function chargerScript(script) {
 const promesse = chargerScript("test.js");
 
 // Renvoi une erreur car le fichier test.js n'existe pas
-promesse.then(
-    function (result) {
-        console.log(result);
-    },
-    function (error) {
-        console.log(error);
-    }
-);
+// promesse.then(
+//     function (result) {
+//         console.log(result);
+//     },
+//     function (error) {
+//         console.log(error);
+//     }
+// );
+
+// On peut aussi passer directement par la fonction elle-même
+chargerScript("test.js")
+.catch(console.log());
