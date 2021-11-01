@@ -21,8 +21,10 @@ async function resultat() {
   try {
     const scriptA = await chargerScript("test.js");
     console.log(scriptA);
+    const scriptB = await chargerScript("autre.js");
+    console.log(scriptB);
   } catch (error) {
-    console.log(error);
+    console.log(error); // Error: Opération impossible pour le script autre.js
   }
 }
 
