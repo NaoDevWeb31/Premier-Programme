@@ -40,20 +40,25 @@ if ("geolocation" in navigator) {
         }
       }
     };
-  });
+  }, erreur);
 } else {
   villeChoisie = "Paris";
   recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
 }
 
 let changerDeVille = document.querySelector("#changer");
-
 // Au clic du bouton "Changer de ville"
 changerDeVille.addEventListener("click", () => {
   // Demander à l'utilisateur de taper une ville
   villeChoisie = prompt("Quelle ville recherchez-vous ?");
   recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
 });
+
+// Étape 5
+function erreur() {
+  villeChoisie = "Paris";
+  recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
+}
 
 function recevoirTemperature(ville) {
   const url =
