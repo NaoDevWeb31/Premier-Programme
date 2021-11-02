@@ -17,6 +17,7 @@ Nous allons **créer un bouton qui permettra de passer du mode sombre au mode cl
 Voici comment va fonctionner notre programme :
 
 - L'utilisateur arrive sur le site : existe-t-il un `localStorage` qui s'appelle "theme" ?
+
   | Oui | Non |
   :---- | ----:
   | Sa valeur est égale à "sombre" ? <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Oui : on appelle la fonction `modeSombre()` <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Non : on ne fait rien | On ne fait rien |
@@ -38,3 +39,11 @@ La fonction `modeSombre()` va se charger :
 - De changer le texte du bouton en "Thème clair"
 
 - De définir le `localStorage` avec le nom "theme" sur "sombre"
+
+#### Étape 2 : Sélectionner les éléments nécessaires
+
+Dans cette première vraie étape, je vous invite à sélectionner les éléments qui vous seront nécessaires :
+
+- Le bouton pour changer le thème actuel (#mode)
+
+- Le span qui contient le texte du bouton (span)
