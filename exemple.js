@@ -4,9 +4,11 @@
 // Avec JavaScript
 document.querySelector("h1").style.color = "orange";
 // document.querySelector("#monId").className = "important";
+// document.querySelector("#monId").className = ""; // Impossible de supprimer une classe avec JS
 document.querySelectorAll("p");
 
 // Avec jQuery
 $("h1").css("color", "blue");
 $("#monId").addClass("important");
+$("#monId").removeClass("important");
 $("p");
