@@ -9,4 +9,6 @@ document.querySelectorAll("p");
 // Avec jQuery
 $("h1").prepend("Oh : "); // Ajouter devant avec jQuery
 $("h1").append(" !"); // Ajouter après avec jQuery
+$("h1").before("<div>Hello</div>"); // Nouveau div avant le titre h1
+$("h1").after("<div>Hello</div>"); // Nouveau div après le titre h1
 $("p");
