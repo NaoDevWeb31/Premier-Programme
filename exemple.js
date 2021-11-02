@@ -4,3 +4,8 @@
 // Pour utiliser un cookie => avoir un serveur locale ou avoir un site internet
 // Simuler un serveur avec MAMP, WAMP, LAMP, XAMP
 
+// Créer un cookie
+document.cookie = "prenom=John";
+
+// Afficher tous les cookies
+alert(document.cookie);
