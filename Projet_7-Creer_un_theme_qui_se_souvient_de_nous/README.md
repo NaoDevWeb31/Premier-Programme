@@ -56,7 +56,7 @@ Pour cette nouvelle étape, vous devrez rendre votre bouton fonctionnel.
 
 Une fois que vous avez réussi à détecter le clic de votre utilisateur, faites une condition pour préparer la prochaine étape :
 
-  :arrow_right: L'élément Body a-t-il une classe 'dark' ?
+&nbsp;&nbsp;:arrow_right: L'élément Body a-t-il une classe 'dark' ?
 
 Allez, je vais vous aider un peu pour cette partie car nous ne l'avons pas encore vu ensemble.
 - Il va falloir récupérer toutes les classes de l'élément `body` grâce à la fonction `.classList`. Cette fonction retourne un tableau de toutes les classes sur un élément.
@@ -78,3 +78,17 @@ Si la classe 'dark' est déjà présente, ceci veut dire que le thème actuel es
 Si la classe 'dark' n'est pas déjà présente, alors nous sommes sur le thème clair. Donc :
 
 - **Appelez** la fonction `modeSombre()`, nous la créerons dans la prochaine étape.
+
+#### Étape 5 : Créer la fonction modeSombre()
+
+Nous devons maintenant créer la fonction `modeSombre()`.
+
+Cette fonction devra :
+
+- **Ajouter** la classe 'dark' sur l'élément Body
+
+- **Changer** le texte du bouton grâce à l'élément `span` en "Thème clair"
+
+- **Définir** avec `localStorage` un item qui s'appellera 'theme' et qui vaudra 'sombre'
+
+À partir d'ici, votre programme fonctionnera déjà ! Mais notre préférence n'est pas encore prise en compte...

@@ -17,3 +17,13 @@ btn.addEventListener("click", () => {
     modeSombre();
   }
 });
+
+// Étape 5 : Créer la fonction modeSombre()
+function modeSombre() {
+  // Ajouter la classe 'dark' sur l'élément Body
+  document.body.className = "dark";
+  // Changer le texte du bouton grâce à l'élément span en "Thème clair"
+  span.textContent = "Thème clair";
+  // Définir avec localStorage un item qui s'appellera 'theme' et qui vaudra 'sombre'
+  localStorage.setItem("theme", "sombre");
+}
