@@ -8,7 +8,7 @@ prenom = "John";
 console.log(prenom); // erreur silencieuse => affiche John
 
 direBonjour(); // exemple.js:14 Uncaught ReferenceError: nom is not defined
-addition(7, 1); // 2
+addition(7, 1); // Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 
 function direBonjour() {
   "use strict";
@@ -17,5 +17,6 @@ function direBonjour() {
 }
 
 function addition(nombreA, nombreA) {
+  "use strict";
   console.log(nombreA + nombreA);
 }
