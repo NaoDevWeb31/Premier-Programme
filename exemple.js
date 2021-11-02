@@ -42,6 +42,9 @@ async function recupererPrix() {
   .then(function(donnees){
     console.log(donnees);
   })
+  .catch(function(erreur){
+    console.log(erreur);
+  });
 }
 
 setInterval(recupererPrix, 1000);
