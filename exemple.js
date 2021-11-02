@@ -13,7 +13,7 @@ if ("geolocation" in navigator) {
   let options = {
     enableHighAccuracy: true, // par défaut : false
     // maximumAge: 0, // par défaut : 0ms
-    timeout: 10000, // par défaut : infinity
+    // timeout: 10000, // par défaut : infinity
   }
 
   navigator.geolocation.getCurrentPosition((position) => {
