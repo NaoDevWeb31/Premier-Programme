@@ -12,7 +12,11 @@ if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition((position) => {
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
-  });
+  }, error);
+
+  function error(){
+    alert("Vous avez refusé la géolocalisation.")
+  }
 
 } else {
   alert("La géolocalisation ne peut pas être utilisée.");
