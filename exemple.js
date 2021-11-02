@@ -33,9 +33,9 @@ async function envoyerPrenom(prenom) {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: {
+    body: new URLSearchParams({
       prenom,
-    },
+    }),
   });
 
   if (!requete.ok) {
