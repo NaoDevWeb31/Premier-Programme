@@ -26,10 +26,18 @@ let requete = new XMLHttpRequest();
 //     }
 //   }
 // };
+
 async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
     method: "POST",
   });
+
+  if (!requete.ok) {
+    alert("Un problème est survenue.");
+  } else {
+    const donnees = await requete.json();
+    console.log(donnees);
+  }
 }
 
 envoyerPrenom("Elon");
