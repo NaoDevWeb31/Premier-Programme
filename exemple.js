@@ -12,3 +12,11 @@
 // clear() : supprimer tout
 // key([index]) : obtenir la clé située à l'index donnée
 // length : obtenir le nombre d'éléments stockés
+
+if (localStorage.getItem("prenom")) {
+  document.body.append("Bonjour " + localStorage.getItem("prenom"));
+} else {
+  let prenom = prompt("Quel est votre prénom ?");
+  localStorage.setItem("prenom", prenom);
+  document.body.append(prenom);
+}
