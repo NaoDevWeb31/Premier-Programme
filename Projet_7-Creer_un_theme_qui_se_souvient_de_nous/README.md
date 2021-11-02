@@ -47,3 +47,18 @@ Dans cette première vraie étape, je vous invite à sélectionner les élément
 - Le bouton pour changer le thème actuel (#mode)
 
 - Le span qui contient le texte du bouton (span)
+
+#### Étape 3 : Rendre notre bouton fonctionnel
+
+Pour cette nouvelle étape, vous devrez rendre votre bouton fonctionnel.
+
+- Pour cela, faites en sorte de détecter dès que l'utilisateur clique sur le bouton "Thème sombre".
+
+Une fois que vous avez réussi à détecter le clic de votre utilisateur, faites une condition pour préparer la prochaine étape :
+
+  :arrow_right: L'élément Body a-t-il une classe 'dark' ?
+
+Allez, je vais vous aider un peu pour cette partie car nous ne l'avons pas encore vu ensemble.
+- Il va falloir récupérer toutes les classes de l'élément `body` grâce à la fonction `.classList`. Cette fonction retourne un tableau de toutes les classes sur un élément.
+
+- Vous devrez utiliser la fonction `.contains('dark')` pour vérifier si la classe 'dark' est déjà présente.
