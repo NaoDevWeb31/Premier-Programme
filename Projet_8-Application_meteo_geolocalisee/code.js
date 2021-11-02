@@ -40,10 +40,15 @@ if ("geolocation" in navigator) {
         }
       }
     };
-  }, erreur);
+  }, erreur, options);
 } else {
   villeChoisie = "Paris";
   recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
+}
+
+// Étape 6
+var options = {
+  enableHighAccuracy: true,
 }
 
 let changerDeVille = document.querySelector("#changer");
