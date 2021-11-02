@@ -12,6 +12,7 @@ if ("geolocation" in navigator) {
   
   let options = {
     enableHighAccuracy: true, // par défaut : false
+    maximumAge: 10000, // par défaut : 0s
   }
 
   navigator.geolocation.getCurrentPosition((position) => {
