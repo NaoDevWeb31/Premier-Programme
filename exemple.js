@@ -5,10 +5,10 @@
 document.querySelector("h1").style.color = "orange";
 // document.querySelector("#monId").className = "important";
 // document.querySelector("#monId").className = ""; // Impossible de supprimer une classe avec JS
-document.querySelectorAll("p");
+// document.querySelectorAll("p").style.color = "purple"; // Impossible de colorer tous les paragraphes d'un coup
 
 // Avec jQuery
 $("h1").css("color", "blue");
 $("#monId").addClass("important");
 $("#monId").removeClass("important");
-$("p");
+$("p").css("color", "purple");
