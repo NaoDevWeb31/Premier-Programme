@@ -5,5 +5,5 @@ $("h1").hide(); // cacher le titre
 $("h1").show(); // afficher le titre
 
 $("p").click(() => {
-  $("h1").hide();
+  $("h1").toggle(); // au clic d'un paragraphe, cacher ou afficher le titre
 });
