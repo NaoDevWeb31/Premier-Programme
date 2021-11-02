@@ -28,6 +28,13 @@ async function recupererPrix() {
   const requete = await fetch(url, {
     method: "GET",
   });
+
+  if(!requete.ok){
+    alert("Un problème est intervenu.");
+  } else {
+    let donnees = await requete.json();
+    console.log(donnees);
+  }
 }
 
 // setInterval(recupererPrix, 1000);
