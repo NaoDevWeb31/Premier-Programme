@@ -8,8 +8,38 @@ let villeChoisie;
 if ("geolocation" in navigator) {
   // Étape 3
   navigator.geolocation.watchPosition((position) => {
-    console.log(position.coords.latitude);
-    console.log(position.coords.longitude);
+    // Étape 4
+    const url =
+      "https://api.openweathermap.org/data/2.5/weather?lon=" +
+      position.coords.longitude +
+      "&lat=" +
+      position.coords.latitude +
+      "&appid=" +
+      appid +
+      "&units=metric";
+
+    console.log(url);
+
+    let requete = new XMLHttpRequest(); // Créer l'objet permettant de faire la requête
+    requete.open("GET", url); // Récupérer les données
+    requete.responseType = "json"; // Nous attendons du JSON
+    requete.send(); // Envoyer la requête
+
+    // Dès qu'on reçoit une réponse, cette fonction est exécutée
+    requete.onload = function () {
+      if (requete.readyState === XMLHttpRequest.DONE) {
+        if (requete.status === 200) {
+          let reponse = requete.response;
+          let temperature = reponse.main.temp; // Récupérer la température
+          let ville = reponse.name; // Récupérer la ville
+          document.querySelector("#temperature_label").textContent =
+            temperature; // Afficher la température
+          document.querySelector("#ville").textContent = ville; // Afficher la ville
+        } else {
+          alert("Un problème est intervenu, merci de revenir plus tard.");
+        }
+      }
+    };
   });
 } else {
   villeChoisie = "Paris";
