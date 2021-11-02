@@ -47,13 +47,14 @@ const url = "https://lesoublisdelinfo.com/api.php";
 
 // envoyerPrenom("Elon");
 
-const axiosInstance = axios.create({
+const axiosInstancePost = axios.create({
   headers: {
     "Content-Type": "application/x-www-form-urlencoded",
   },
+  baseURL: "https://lesoublisdelinfo.com/",
 });
 
-axiosInstance.post(url, new URLSearchParams({
+axiosInstancePost.post("api.php", new URLSearchParams({
     prenom: "Steve",
   }))
   .then(function (donnees) {
