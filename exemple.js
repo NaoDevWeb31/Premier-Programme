@@ -3,8 +3,8 @@
 
 // LocalStorage = Stocké dans le navigateur MÊME APRÈS qu'il soit fermé => conseillé
 // SessionStorage = Stocké dans le navigateur PENDANT la session
-  // Jamais envoyé au serveur contrairement aux cookies
-  // Plus simple à utiliser qu'un cookie
+// Jamais envoyé au serveur contrairement aux cookies
+// Plus simple à utiliser qu'un cookie
 
 // Et les cookies ?
 
@@ -20,3 +20,5 @@ if (localStorage.getItem("prenom")) {
   localStorage.setItem("prenom", prenom);
   document.body.append(prenom);
 }
+
+localStorage.clear();
