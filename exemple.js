@@ -7,10 +7,15 @@
 prenom = "John";
 console.log(prenom); // erreur silencieuse => affiche John
 
-direBonjour();
+direBonjour(); // exemple.js:14 Uncaught ReferenceError: nom is not defined
+addition(7, 1); // 2
 
 function direBonjour() {
   "use strict";
   nom = "Doe";
-  console.log(nom); // exemple.js:14 Uncaught ReferenceError: nom is not defined
+  console.log(nom);
+}
+
+function addition(nombreA, nombreA) {
+  console.log(nombreA + nombreA);
 }
