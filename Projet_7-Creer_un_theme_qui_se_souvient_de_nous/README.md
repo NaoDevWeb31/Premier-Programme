@@ -92,3 +92,19 @@ Cette fonction devra :
 - **Définir** avec `localStorage` un item qui s'appellera 'theme' et qui vaudra 'sombre'
 
 À partir d'ici, votre programme fonctionnera déjà ! Mais notre préférence n'est pas encore prise en compte...
+
+#### Étape 6 : Regarder si la préférence de l'utilisateur existe déjà
+
+Dans cette dernière étape, vous devrez vérifier si l'utilisateur dispose déjà d'un item stocké sur son navigateur qui s'appelle 'theme'. Si c'est le cas, c'est que notre utilisateur a déjà choisi son mode préféré.
+
+- Vérifiez si l'élément 'theme' existe
+
+    - **Il existe ?** Sa valeur est-elle égale à 'sombre' ?
+
+        - **Oui ?** On appelle la fonction `modeSombre()`
+
+        - **Non ?** On ne fait rien
+
+Et voici pourquoi nous créons une fonction `modeSombre()` et pas `modeClair()` ! Nous utilisons deux fois les instructions qui nous permettent de passer au mode sombre : quand l'utilisateur ouvre la page, et lorsqu'il clique sur le bouton pour changer de thème.
+
+Or, nous n'aimons pas nous répéter. Donc, pour garder un code simple à maintenir, il faut créer une fonction qui nous permettra de ne pas le faire.

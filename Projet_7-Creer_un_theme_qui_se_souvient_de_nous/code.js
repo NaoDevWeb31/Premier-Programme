@@ -2,6 +2,15 @@
 let btn = document.querySelector("#mode");
 let span = document.querySelector("span");
 
+// Étape 6 : Regarder si la préférence de l'utilisateur existe déjà
+if (localStorage.getItem("theme")) {
+  // Vérifiez si l'élément 'theme' existe // Sa valeur est-elle égale à 'sombre' ?
+  if (localStorage.getItem("theme") == "sombre") {
+    // Appeler la fonction modeSombre()
+    modeSombre();
+  }
+}
+
 // Étape 3 : Rendre notre bouton fonctionnel
 btn.addEventListener("click", () => {
   // Étape 4 : Changer les classes au clic
