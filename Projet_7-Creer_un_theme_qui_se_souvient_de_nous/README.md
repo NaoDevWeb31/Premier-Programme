@@ -62,3 +62,19 @@ Allez, je vais vous aider un peu pour cette partie car nous ne l'avons pas encor
 - Il va falloir récupérer toutes les classes de l'élément `body` grâce à la fonction `.classList`. Cette fonction retourne un tableau de toutes les classes sur un élément.
 
 - Vous devrez utiliser la fonction `.contains('dark')` pour vérifier si la classe 'dark' est déjà présente.
+
+#### Étape 4 : Changer les classes au clic
+
+Vous savez maintenant si votre élément Body possède déjà la classe 'dark'. Dans ce cas, rien de plus simple !
+
+Si la classe 'dark' est déjà présente, ceci veut dire que le thème actuel est le thème sombre. Donc :
+
+- **Retirez** toutes les classes de l'élément Body
+
+- **Changez** le texte du bouton grâce à votre élément `span` en "Thème sombre"
+
+- **Définissez** un élément `localStorage`, qui s'appellera 'theme' et qui aura pour valeur 'clair'
+
+Si la classe 'dark' n'est pas déjà présente, alors nous sommes sur le thème clair. Donc :
+
+- **Appelez** la fonction `modeSombre()`, nous la créerons dans la prochaine étape.
