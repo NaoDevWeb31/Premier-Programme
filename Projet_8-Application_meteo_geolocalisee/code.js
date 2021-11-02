@@ -3,7 +3,14 @@ var appid = config.OPEN_WEATHER_APPID;
 
 // Ville par défaut
 let villeChoisie;
-recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de Paris
+
+// Étape 2
+if ("geolocation" in navigator) {
+
+} else {
+  villeChoisie = "Paris";
+  recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
+}
 
 let changerDeVille = document.querySelector("#changer");
 
