@@ -37,3 +37,19 @@ $.ajax({
     alert("Merci de revenir plus tard.");
   },
 });
+
+const url_bis = "https://lesoublisdelinfo.com/api.php";
+
+$.ajax({
+  url: url_bis,
+  type: "POST",
+  data: "prenom=John",
+  dataType: "json",
+  success: (data) => {
+    // console.log(data);
+    $("#monId").text(data.resultat);
+  },
+  error: () => {
+    alert("Merci de revenir plus tard.");
+  },
+});
