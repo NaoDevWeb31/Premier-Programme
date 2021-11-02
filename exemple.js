@@ -47,7 +47,9 @@ const url = "https://lesoublisdelinfo.com/api.php";
 
 // envoyerPrenom("Elon");
 
-axios.post(url, {})
+axios.post(url, {
+    prenom: "Steve",
+  })
   .then(function (donnees) {
     console.log(donnees);
   })
