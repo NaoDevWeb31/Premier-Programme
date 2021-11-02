@@ -20,7 +20,7 @@ async function recupererPrix() {
   //       let prixEnEuros = reponse.EUR.last;
   //       document.querySelector("#price_label").textContent = prixEnEuros;
   //     } else {
-  //       alert("Un problème est intervenu, merci de revenir plus tard.");
+  //       alert("Un problème est survenue, merci de revenir plus tard.");
   //     }
   //   }
   // };
@@ -31,7 +31,7 @@ async function recupererPrix() {
   // });
 
   // if (!requete.ok) {
-  //   alert("Un problème est intervenu.");
+  //   alert("Un problème est survenue.");
   // } else {
   //   let donnees = await requete.json();
   //   // console.log(donnees);
@@ -43,7 +43,7 @@ async function recupererPrix() {
     console.log(donnees);
   })
   .catch(function(erreur){
-    console.log(erreur);
+    alert("Un problème est survenue.");
   });
 }
 
