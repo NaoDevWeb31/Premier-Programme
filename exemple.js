@@ -33,7 +33,8 @@ async function recupererPrix() {
     alert("Un problème est intervenu.");
   } else {
     let donnees = await requete.json();
-    console.log(donnees);
+    // console.log(donnees);
+    document.querySelector("span").textContent = donnees.EUR.last;
   }
 }
 
