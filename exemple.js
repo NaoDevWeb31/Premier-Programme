@@ -12,9 +12,14 @@
 } */
 
 // Avec jQuery
-$("h1").click(() => {
+/* $("h1").click(() => {
   $("h1").css("color", "orange"); // au clic, le titre devient orange
-});
+}); */
+
 $("p").click(() => {
   $("h1").css("color", "orange"); // au clic d'un des paragraphes, le titre devient orange
+});
+
+$("h1").on("mouseover", () => {
+  $("#monId").addClass("important"); // au survol du titre, le 1er paragraphe prend la classe "important"
 });
