@@ -45,6 +45,9 @@ async function recupererPrix() {
   })
   .catch(function(erreur){
     alert("Un problème est survenue.");
+  })
+  .then(function(){
+    console.log("Mise à jour effectuée");
   });
 }
 
