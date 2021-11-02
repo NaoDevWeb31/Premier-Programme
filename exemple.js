@@ -38,5 +38,4 @@ async function recupererPrix() {
   }
 }
 
-// setInterval(recupererPrix, 1000);
-recupererPrix();
+setInterval(recupererPrix, 1000);
