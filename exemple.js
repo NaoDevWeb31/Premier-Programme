@@ -4,6 +4,8 @@
 $("h1").hide(); // cacher le titre
 $("h1").show(); // afficher le titre
 
+// au clic d'un paragraphe
 $("p").click(() => {
-  $("h1").toggle(); // au clic d'un paragraphe, cacher ou afficher le titre
+  // $("h1").toggle(); // cacher ou afficher le titre
+  $("h1").fadeOut(); // cacher le titre avec un délai de transition
 });
