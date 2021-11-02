@@ -1,50 +1,34 @@
-//                              UTILISONS LES REQUÊTES ASYNCHRONES, CALLBACKS & PROMISES
-/****** Async et Await ******/
+//                              AMÉLIORONS NOS REQUÊTES AVEC FETCH & AXIOS
+/****** Récupérer des données avec Fetch ******/
 
-function chargerScript(script) {
-  return new Promise((resolve, reject) => {
-    // Créer un nouvel élément
-    let element = document.createElement("script");
-    element.src = script;
-    document.head.append(element);
+const url = "https://blockchain.info/ticker";
 
-    // Deux possibilités : resolve()
-    element.onload = () => resolve("Fichier " + script + " a été chargé");
+async function recupererPrix() {
+  // // Créer une requête
+  // let requete = new XMLHttpRequest(); // Créer un objet
+  // requete.open("GET", url); // 1er paramètre GET/POST // 2e paramètre : url
+  // requete.responseType = "json"; // Nous attendons du JSON
+  // requete.send(); // Nous envoyons la requête
 
-    // reject()
-    element.onerror = () =>
-      reject(new Error("Opération impossible pour le script " + script));
+  // // Dès qu'on reçoit une réponse, cette fonction est exécutée
+  // requete.onload = function () {
+  //   // Quand la requête est terminée
+  //   if (requete.readyState === XMLHttpRequest.DONE) {
+  //     // Si la requête a été traitée avec succès
+  //     if (requete.status === 200) {
+  //       let reponse = requete.response; // On stocke la réponse
+  //       let prixEnEuros = reponse.EUR.last;
+  //       document.querySelector("#price_label").textContent = prixEnEuros;
+  //     } else {
+  //       alert("Un problème est intervenu, merci de revenir plus tard.");
+  //     }
+  //   }
+  // };
+  // console.log("Prix actualisé");
+  const requete = await fetch(url, {
+    method: "GET",
   });
 }
 
-async function resultat() {
-  try {
-    const scriptA = await chargerScript("test.js");
-    console.log(scriptA); // Fichier test.js a été chargé
-    const scriptB = await chargerScript("autre.js");
-    console.log(scriptB);
-  } catch (error) {
-    console.log(error); // Error: Opération impossible pour le script autre.js
-    document.head.lastChild.remove();
-  }
-}
-
-resultat();
-
-// Async et Await "sucres syntaxiques"
-// Utiliser les promesses de façon plus intuitives
-
-// "async" devant une fonction => la forcer à retourner une promesse & pouvoir utiliser 'await' dans celle-ci.
-// async function direBonjour() {
-//   const promesse = new Promise((resolve, reject) => {
-//     setTimeout(() => resolve("Promesse tenue !"), 3000);
-//   });
-
-//   // On attend que la promesse soit honorée ou rejetée, un peu comme then(), mais de façon plus intuitive
-//   // Si on place le mot-clé "await" devant une promesse, JavaScript est obligé d'attendre que celle-ci soit terminée.
-//   // Si elle est rompue, alors, il générera une exception.
-//   let resultat = await promesse;
-//   console.log(resultat);
-// }
-
-// direBonjour(); // Promesse tenue !
+// setInterval(recupererPrix, 1000);
+recupererPrix();
