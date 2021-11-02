@@ -12,3 +12,6 @@ direBonjour("John"); // John
 export function direBonjour(prenom) {
   console.log("Bonjour " + prenom);
 }
+
+// index.html
+<script type="module" src="index.js"></script>;
