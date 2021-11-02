@@ -6,8 +6,7 @@ let span = document.querySelector("span");
 if (localStorage.getItem("theme")) {
   // Vérifiez si l'élément 'theme' existe // Sa valeur est-elle égale à 'sombre' ?
   if (localStorage.getItem("theme") == "sombre") {
-    // Appeler la fonction modeSombre()
-    modeSombre();
+    modeSombre(); // Appeler la fonction modeSombre()
   }
 }
 
@@ -15,24 +14,19 @@ if (localStorage.getItem("theme")) {
 btn.addEventListener("click", () => {
   // Étape 4 : Changer les classes au clic
   if (document.body.classList.contains("dark")) {
-    // Retirez toutes les classes de l'élément Body
-    document.body.className = "";
-    // Changez le texte du bouton grâce à votre élément span en "Thème sombre"
-    span.textContent = "Thème sombre";
-    // Définissez un élément localStorage, qui s'appellera 'theme' et qui aura pour valeur 'clair'
-    localStorage.setItem("theme", "clair");
+    // Mode clair
+    document.body.className = ""; // Retirez toutes les classes de l'élément Body
+    span.textContent = "Thème sombre"; // Changez le texte du bouton grâce à votre élément span en "Thème sombre"
+    localStorage.setItem("theme", "clair"); // Définissez un élément localStorage, qui s'appellera 'theme' et qui aura pour valeur 'clair'
   } else {
-    // Appelez la fonction modeSombre()
-    modeSombre();
+    // Mode sombre
+    modeSombre(); // Appelez la fonction modeSombre()
   }
 });
 
 // Étape 5 : Créer la fonction modeSombre()
 function modeSombre() {
-  // Ajouter la classe 'dark' sur l'élément Body
-  document.body.className = "dark";
-  // Changer le texte du bouton grâce à l'élément span en "Thème clair"
-  span.textContent = "Thème clair";
-  // Définir avec localStorage un item qui s'appellera 'theme' et qui vaudra 'sombre'
-  localStorage.setItem("theme", "sombre");
+  document.body.className = "dark"; // Ajouter la classe 'dark' sur l'élément Body
+  span.textContent = "Thème clair"; // Changer le texte du bouton grâce à l'élément span en "Thème clair"
+  localStorage.setItem("theme", "sombre"); // Définir avec localStorage un item qui s'appellera 'theme' et qui vaudra 'sombre'
 }
