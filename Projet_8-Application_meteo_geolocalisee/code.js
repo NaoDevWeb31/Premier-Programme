@@ -6,7 +6,11 @@ let villeChoisie;
 
 // Étape 2
 if ("geolocation" in navigator) {
-
+  // Étape 3
+  navigator.geolocation.watchPosition((position) => {
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+  });
 } else {
   villeChoisie = "Paris";
   recevoirTemperature(villeChoisie); // Récupérer et afficher la météo de la ville choisie
