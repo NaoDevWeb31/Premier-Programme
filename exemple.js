@@ -23,6 +23,7 @@
 //   }
 // };
 
+// Récupérer des données avec AJAX
 const url = "https://blockchain.info/ticker";
 
 $.ajax({
@@ -38,6 +39,7 @@ $.ajax({
   },
 });
 
+// Envoyer des données avec AJAX
 const url_bis = "https://lesoublisdelinfo.com/api.php";
 
 $.ajax({
