@@ -16,10 +16,12 @@ if ("geolocation" in navigator) {
     // timeout: 10000, // par défaut : infinity
   }
 
-  navigator.geolocation.getCurrentPosition((position) => {
+  let watch = navigator.geolocation.watchPosition((position) => {
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
   }, error, options);
+
+  navigator.geolocation.clearWatch(watch); // désactiver la géolocalisation
 
   function error(){
     alert("Vous avez refusé la géolocalisation.")
