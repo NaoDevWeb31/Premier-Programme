@@ -30,6 +30,12 @@ let requete = new XMLHttpRequest();
 async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: {
+      prenom,
+    },
   });
 
   if (!requete.ok) {
