@@ -30,7 +30,8 @@ $.ajax({
   type: "GET",
   dataType: "json",
   success: (data) => {
-    console.log(data);
+    // console.log(data);
+    $("h1").text(data.EUR.last + " euros");
   },
   error: () => {
     alert("Merci de revenir plus tard.");
