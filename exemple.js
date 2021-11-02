@@ -1,32 +1,12 @@
 //                              LES INCLASSABLES
-/****** Géolocaliser un utilisateur ******/
+/****** Créer des modules (import, export) ******/
 
-// Pour géolocaliser on utilise l'objet geolocation
+// Attention : impossible d'utiliser les modules si vous n'avez pas de serveur (https), la plupart des navigateurs bloquent les modules pour notre sécurité s'ils ne sont pas exécutés sur des serveurs
 
-// Vérifier que la géolocalisation soit disponible
-if ("geolocation" in navigator) {
-  // getCurrentPosition() retourne une fois la position de l'utilisateur
-                                    // OU
-  // watchPosition() actualise la position plusieurs fois selon un délai variable
-                    // 3 paramètres : success, error, options
-  
-  let options = {
-    enableHighAccuracy: true, // par défaut : false
-    // maximumAge: 0, // par défaut : 0ms
-    // timeout: 10000, // par défaut : infinity
-  }
+// index.js
+import { direBonjour } from './modules/direBonjour.js';
 
-  let watch = navigator.geolocation.watchPosition((position) => {
-    console.log(position.coords.latitude);
-    console.log(position.coords.longitude);
-  }, error, options);
-
-  navigator.geolocation.clearWatch(watch); // désactiver la géolocalisation
-
-  function error(){
-    alert("Vous avez refusé la géolocalisation.")
-  }
-
-} else {
-  alert("La géolocalisation ne peut pas être utilisée.");
+// modules/direBonjour.js
+export direBonjour(prenom) {
+  console.log("Bonjour " + prenom);
 }
