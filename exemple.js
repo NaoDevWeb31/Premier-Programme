@@ -9,10 +9,15 @@ if ("geolocation" in navigator) {
                                     // OU
   // watchPosition() actualise la position plusieurs fois selon un délai variable
                     // 3 paramètres : success, error, options
+  
+  let options = {
+    enableHighAccuracy: true, // par défaut : false
+  }
+
   navigator.geolocation.getCurrentPosition((position) => {
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
-  }, error);
+  }, error, options);
 
   function error(){
     alert("Vous avez refusé la géolocalisation.")
