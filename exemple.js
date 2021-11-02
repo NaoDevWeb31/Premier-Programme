@@ -31,12 +31,11 @@ async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
     method: "POST",
     headers: {
-      // "Content-Type": "application/x-www-form-urlencoded",
-      "Content-Type": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: /*new URLSearchParams(*/ {
+    body: new URLSearchParams({
       prenom,
-    } /*)*/,
+    }),
   });
 
   if (!requete.ok) {
