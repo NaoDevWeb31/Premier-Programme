@@ -1,25 +1,38 @@
 //                              ET SI ON ÉCRIVAIT PLUS VITE AVEC JQUERY ?
-/****** Ajouter des évènements avec jQuery et JavaScript ******/
+/****** Faire une requête AJAX avec jQuery et JavaScript ******/
 
-// Avec JavaScript
-/* document.querySelector("h1").addEventListener("click", () => {
-  document.querySelector("h1").style.color = "orange";
-}); */
-/* for (let i = 0; i < 2; i++) {
-  document.querySelectorAll("p")[i].addEventListener("click", () => {
-    document.querySelector("h1").style.color = "orange";
-  });
-} */
+// let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
+// requete.open("GET", url); // Nous récupérons juste des données
+// requete.responseType = "json"; // Nous attendons du JSON
+// requete.send(); // Nous envoyons notre requête
 
-// Avec jQuery
-/* $("h1").click(() => {
-  $("h1").css("color", "orange"); // au clic, le titre devient orange
-}); */
+// // Dès qu'on reçoit une réponse, cette fonction est exécutée
+// requete.onload = function () {
+//   if (requete.readyState === XMLHttpRequest.DONE) {
+//     if (requete.status === 200) {
+//       let reponse = requete.response;
+//       // console.log(reponse);
+//       let temperature = reponse.main.temp;
+//       let ville = reponse.name;
+//       // console.log(temperature);
+//       document.querySelector("#temperature_label").textContent = temperature;
+//       document.querySelector("#ville").textContent = ville;
+//     } else {
+//       alert("Un problème est survenue, merci de revenir plus tard.");
+//     }
+//   }
+// };
 
-$("p").click(() => {
-  $("h1").css("color", "orange"); // au clic d'un des paragraphes, le titre devient orange
-});
+const url = "https://blockchain.info/ticker";
 
-$("h1").on("mouseover", () => {
-  $("#monId").addClass("important"); // au survol du titre, le 1er paragraphe prend la classe "important"
+$.ajax({
+  url: url,
+  type: "GET",
+  dataType: "json",
+  success: (data) => {
+    console.log(data);
+  },
+  error: () => {
+    alert("Merci de revenir plus tard.");
+  },
 });
