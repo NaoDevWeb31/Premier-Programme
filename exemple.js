@@ -3,7 +3,7 @@
 
 const url = "https://lesoublisdelinfo.com/api.php";
 
-let requete = new XMLHttpRequest();
+// let requete = new XMLHttpRequest();
 
 // GET
 // requete.open("GET", url);
@@ -31,11 +31,12 @@ async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
     method: "POST",
     headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
+      // "Content-Type": "application/x-www-form-urlencoded",
+      "Content-Type": "application/json",
     },
-    body: new URLSearchParams({
+    body: /*new URLSearchParams(*/ {
       prenom,
-    }),
+    } /*)*/,
   });
 
   if (!requete.ok) {
