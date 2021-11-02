@@ -1,5 +1,5 @@
 //                              AMÉLIORONS NOS REQUÊTES AVEC FETCH & AXIOS
-/****** La librairie Axios ******/
+/****** Récupérer des données avec Axios ******/
 
 const url = "https://blockchain.info/ticker";
 
@@ -26,17 +26,22 @@ async function recupererPrix() {
   // };
   // console.log("Prix actualisé");
 
-  const requete = await fetch(url, {
-    method: "GET",
-  });
+  // const requete = await fetch(url, {
+  //   method: "GET",
+  // });
 
-  if (!requete.ok) {
-    alert("Un problème est intervenu.");
-  } else {
-    let donnees = await requete.json();
-    // console.log(donnees);
-    document.querySelector("span").textContent = donnees.EUR.last;
-  }
+  // if (!requete.ok) {
+  //   alert("Un problème est intervenu.");
+  // } else {
+  //   let donnees = await requete.json();
+  //   // console.log(donnees);
+  //   document.querySelector("span").textContent = donnees.EUR.last;
+  // }
+
+  axios.get(url)
+  .then(function(donnees){
+    console.log(donnees);
+  })
 }
 
 setInterval(recupererPrix, 1000);
